@@ -1,0 +1,12 @@
+.latest {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1180px) {
+  .latest {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
