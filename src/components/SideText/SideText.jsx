@@ -1,16 +1,11 @@
 import React from "react";
 import style from "./SideText.module.css";
 
-let counter = 0;
+let toggle = false;
 
 function SideText({ titleText, text, imgSrc }) {
-  counter += 0.5;
-  let toggle;
-  if (counter % 2 === 0) {
-    toggle = true;
-  } else {
-    toggle = false;
-  }
+  toggle = !toggle;
+
   return (
     <div
       className={`${style.SideTextWrapper} ${
