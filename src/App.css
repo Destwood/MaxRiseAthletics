@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+input {
+  all: unset;
+}
+
 /*  */
 
 .App {

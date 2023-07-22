@@ -1,0 +1,78 @@
+.popupWrapper {
+  background-color: rgba(0, 0, 0, 0.446);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+/* content */
+
+.popupContent {
+  width: 30rem;
+  height: 40rem;
+  background-color: #840023;
+  border-radius: 50px;
+  padding: 3rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.form {
+  height: 80%;
+}
+
+.input {
+  display: block;
+  margin-bottom: 2rem;
+  background-color: #3a000f;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.input::placeholder {
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+/* input area */
+
+.msg {
+  text-align: left;
+  height: 10vh;
+}
+
+/* input area */
+
+.submit {
+  width: 100%;
+  height: 5vh;
+  border-radius: 20px;
+  border: none;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+/*  */
+.hide {
+  display: none;
+}

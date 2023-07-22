@@ -5,6 +5,7 @@ import Services from "./components/Services/Services";
 import About from "./components/About/About";
 import Latest from "./components/Latest/Latest";
 import Footer from "./components/Footer/Footer";
+import Popup from "./components/Popup/Popup";
 import "./App.css";
 import "./components/header.css";
 
@@ -14,6 +15,7 @@ import test from "./assets/test.jpg";
 function App() {
   const [isMenuActive, SetIsMenuActive] = useState(false);
   const [isBurgerChacked, SetisBurgerChacked] = useState(false);
+  const [showPopup, setShowPopup] = useState(true);
 
   const handleBurgerChange = (event) => {
     console.log("change button", isBurgerChacked);
@@ -27,6 +29,9 @@ function App() {
       } else {
         SetIsMenuActive(false);
       }
+      setTimeout(() => {
+        setShowPopup(true);
+      }, 2000);
     };
 
     handleResize();
@@ -47,9 +52,7 @@ function App() {
               {/* logo */}
               <a href="/" className="logo">
                 <p className="logoIcon">M</p>
-                <p className="logoName">
-                  MaxRise<span className="span">-Athletics</span>
-                </p>
+                <p className="logoName">MaxRise-Athletics</p>
               </a>
               {/* logo */}
 
@@ -150,6 +153,9 @@ function App() {
           <Latest />
         </main>
         {/* main */}
+        {showPopup && (
+          <Popup showPopup={showPopup} setShowPopup={setShowPopup} />
+        )}
       </div>
       <Footer />
     </div>
