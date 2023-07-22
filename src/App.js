@@ -15,11 +15,14 @@ import test from "./assets/test.jpg";
 function App() {
   const [isMenuActive, SetIsMenuActive] = useState(false);
   const [isBurgerChacked, SetisBurgerChacked] = useState(false);
-  const [showPopup, setShowPopup] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleBurgerChange = (event) => {
     console.log("change button", isBurgerChacked);
     SetisBurgerChacked(event.target.checked);
+  };
+  const openPopup = () => {
+    setShowPopup(true);
   };
 
   useEffect(() => {
@@ -146,8 +149,8 @@ function App() {
             <About />
           </div>
           {/* TextBlock */}
-          <div className="container">
-            <TextBlock titleText="Checkout our latest works" text="" />
+          <div className="container" onClick={openPopup}>
+            <h3 className="contact">Contact us</h3>
           </div>
           {/* Latest */}
           <Latest />

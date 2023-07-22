@@ -10,7 +10,7 @@ function Popup({ showPopup, setShowPopup }) {
       }}
     >
       <div className={style.popupContent} onClick={(e) => e.stopPropagation()}>
-        <h3 className={style.title}>Contuct us</h3>
+        <h3 className={style.title}>Contact us</h3>
         <form
           action="https://formspree.io/f/xknlgqvl"
           method="POST"
