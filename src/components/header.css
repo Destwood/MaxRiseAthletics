@@ -9,9 +9,9 @@ header {
 .headerContainer {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 2rem;
+  padding: 0.5rem;
   font-weight: 700;
 }
 
@@ -19,23 +19,25 @@ header {
 .logo {
   display: flex;
   align-items: center;
+  user-select: none;
 }
 
 .logoIcon {
-  height: 3rem;
-  width: 3rem;
-  background-color: white;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #ff7f26;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   display: flex;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   padding: 0.2rem;
   user-select: none;
+  color: #fff;
 }
 
 .logoName {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin: 0 2rem;
   display: flex;
   align-items: center;
@@ -46,7 +48,7 @@ header {
 /* links */
 .links {
   display: flex;
-  font-size: 2rem;
+  font-size: 1.2rem;
   align-items: center;
 }
 
@@ -55,7 +57,7 @@ header {
 }
 
 .link:hover {
-  color: #fff;
+  color: #ff7f26;
   /* transition: 0.5s; */
 }
 /* end links */

@@ -1,0 +1,57 @@
+.contactWrapper {
+  width: 80%;
+  background-color: #fff;
+  margin: auto;
+  padding: 3rem;
+}
+
+.contactTitle {
+  font-size: 3rem;
+  margin: auto;
+  width: fit-content;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+.inputContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.input {
+  width: 45%;
+  margin-bottom: 2rem;
+  border: 1px solid #000;
+  padding: 1rem;
+}
+
+.msg {
+  width: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.submit {
+  display: block;
+  width: 50%;
+  height: 5vh;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin: auto;
+  color: #000;
+  background-color: #ffbd2e51;
+  border: 2px solid #ffbd2e;
+}
+
+.submit:hover {
+  cursor: pointer;
+
+  background-color: #ffbd2e;
+}
