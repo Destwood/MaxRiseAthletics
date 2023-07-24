@@ -28,27 +28,6 @@ function Services() {
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         }
       />
-      <Card
-        img={img}
-        titleText={"title"}
-        text={
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-        }
-      />
-      <Card
-        img={img}
-        titleText={"title"}
-        text={
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-        }
-      />
-      <Card
-        img={img}
-        titleText={"title"}
-        text={
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-        }
-      />
     </div>
   );
 }

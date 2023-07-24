@@ -1,21 +1,23 @@
 .SideTextWrapper {
-  background-color: #00000017;
+  background-color: #ff8026c1;
   display: flex;
   border-radius: 50px;
   padding: 5rem;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 5rem;
-
-  color: #fff;
+  color: #000;
   -webkit-box-shadow: 2px 2px 46px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 2px 46px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 2px 2px 46px 1px rgba(0, 0, 0, 0.75);
+  height: 60vh;
+  width: 75%;
+  margin: 0 auto 2.5rem;
 }
 
 .rewersedWrapper {
   flex-direction: row-reverse;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .textContainer {
@@ -28,16 +30,16 @@
 }
 .titleText {
   font-size: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 .text {
-  color: #bdbdbd;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .img {
-  width: 600px;
+  width: 30vw;
   border-radius: 10px;
 }
 

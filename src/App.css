@@ -12,7 +12,6 @@ html {
 }
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #6c001d;
 }
 
 ul {
@@ -27,51 +26,50 @@ a {
 input {
   all: unset;
 }
-
 /*  */
 
-.App {
-  margin: 0;
-}
-
-.wrapper {
-  width: 80%;
-  margin: auto;
-}
-
-.container::after {
-  content: "";
-  display: block;
-  height: 1px;
+header {
+  position: fixed;
   background-color: #fff;
-  width: 80%;
-  margin: auto;
-  margin-bottom: 4rem;
 }
 
-.contact {
+/* containers */
+
+.container {
+  padding: 5rem;
+  background-size: cover;
+}
+
+.sideContainer {
+  background-color: #000;
+}
+.cardsContainer {
+}
+
+.servicesContainer {
+}
+.contactContainer {
+  background-color: #ff7f26;
+}
+
+/* sideContainer */
+
+.title {
+  font-size: 3rem;
   width: fit-content;
-  margin: auto;
-  font-size: 5rem;
-  margin-bottom: 4rem;
+  margin: 0 auto 3rem;
 }
 
-.contact:hover {
+.sideTitle {
   color: #fff;
-  cursor: pointer;
 }
 
-@media (max-width: 1280px) {
-  .wrapper {
-    width: 100%;
-  }
-  main {
-    padding: 5rem;
-  }
+.blockTitle {
+  color: #000;
 }
 
-@media (max-width: 750px) {
-  main {
-    padding: 0;
-  }
+/* popup */
+
+body {
+  overflow-y: hidden;
 }
