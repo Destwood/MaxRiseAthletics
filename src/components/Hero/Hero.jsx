@@ -1,17 +1,19 @@
 import React from "react";
 import style from "./Hero.module.css";
 
-function Hero() {
+function Hero({ handleButtonClick }) {
   return (
     <div className={style.heroWrapper}>
       <div className={style.heroContent}>
-        <h3 className={style.title}>Transform Yourself</h3>
+        <h3 className={style.title}>Готові до змін?</h3>
         <p className={style.text}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s
+          MaxRise - це про здоров’я, тож результат гарантовано отримують всі.
+          Незалежно від вашого досвіду та фізичної підготовки, ви знайдете
+          відповідні рекомендації для розвитку вашого тіла та духу.
         </p>
-        <button className={style.btn}>Order now!</button>
+        <button className={style.btn} onClick={handleButtonClick}>
+          Замовити
+        </button>
       </div>
     </div>
   );

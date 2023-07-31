@@ -19,6 +19,10 @@ function App() {
   const [scrollOpacity, setScrollOpacity] = useState(1);
   const [showPopup, setShowPopup] = useState(false); // show popup
 
+  const handleButton = () => {
+    setShowPopup(true);
+  };
+
   const handleBurgerChange = (event) => {
     console.log("change button", isBurgerChacked);
     SetisBurgerChacked(event.target.checked);
@@ -74,18 +78,23 @@ function App() {
           {/* menu */}
           <ul className="links">
             <li className="linksItem">
-              <a href="/" className="link">
-                First
+              <a href="#about" className="link">
+                Про нас
               </a>
             </li>
             <li className="linksItem">
-              <a href="/" className="link">
-                Second
+              <a href="#blocktitle" className="link">
+                Block Title
               </a>
             </li>
             <li className="linksItem">
-              <a href="/" className="link">
-                Third
+              <a href="#services" className="link">
+                Послуги
+              </a>
+            </li>
+            <li className="linksItem">
+              <a href="#order" className="link">
+                Замовити
               </a>
             </li>
           </ul>
@@ -115,44 +124,43 @@ function App() {
       </header>
       {/* main */}
       <main>
-        <Hero />
+        <Hero handleButtonClick={handleButton} />
         {/* sideContainer */}
-        <div className="sideContainer container">
-          <h2 className="sideTitle title">Block Title</h2>
+        <div className="sideContainer container" id="about">
+          <h2 className="sideTitle title">Про нас</h2>
           <SideText
-            titleText={"one"}
-            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book."
+            titleText={"Досвід"}
+            text="Мене звати Максим Гончарук і я з впевненістю можу сказати, що є справжнім професіоналом у своїй галузі. 
+            Завдяки 7-річному досвіду занять в тренажерному залі, мені вдалось вийти на рівень висококваліфікованого атлета."
             imgSrc={img}
           />
           <SideText
-            titleText={"two"}
-            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book."
+            titleText={"Профейсійність"}
+            text="На нашому сайті  MaxRise athletics я та команда, ділимось своїми знаннями та підходами до тренувань і харчування. Ви знайдете важливі поради, що допоможуть Вам побудувати міцне тіло і підтримувати ефективне харчування, необхідне для досягнення Ваших цілей."
             imgSrc={test}
           />
           <SideText
-            titleText={"three"}
-            text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
-            unknown printer took a galley of type and scrambled it to make a type specimen book."
+            titleText={"Вдосконалення"}
+            text="Незалежно від Вашого рівня підготовки або спортивних амбіцій, ми переконані, 
+            що з мотивацією і нашою допомогою, досягнення успіху - це лише питання часу. 
+            Запрошуємо Вас долучатись і розпочати свій захоплюючий шлях до 
+            здорового способу життя."
             imgSrc={img}
           />
         </div>
         {/* CardsList */}
-        <div className="cardsContainer container">
+        <div className="cardsContainer container" id="blocktitle">
           <h2 className="blockTitle title">Block Title</h2>
           <CardsList />
         </div>
         <div
           className="servicesContainer container"
           style={{ backgroundImage: `url(${bgItem})` }}
+          id="services"
         >
           <Services />
         </div>
-        <div className="contactContainer container">
+        <div className="contactContainer container" id="order">
           <Contact />
         </div>
       </main>

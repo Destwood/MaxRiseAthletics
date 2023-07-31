@@ -3,7 +3,6 @@ import style from "./Footer.module.css";
 import inst from "../../assets/instagram.svg";
 import telegram from "../../assets/telegram.svg";
 import mail from "../../assets/mail.svg";
-import phone from "../../assets/phone.svg";
 
 function Footer() {
   return (
@@ -40,13 +39,6 @@ function Footer() {
               <a href="/" className={style.link}>
                 <p className={style.linkName}>Mail</p>
                 <img src={mail} alt="inst" className={style.logo} />
-              </a>
-            </div>
-
-            <div className={style.phone + " " + style.socialLink}>
-              <a href="/" className={style.link}>
-                <p className={style.linkName}>Phone</p>
-                <img src={phone} alt="inst" className={style.logo} />
               </a>
             </div>
           </div>

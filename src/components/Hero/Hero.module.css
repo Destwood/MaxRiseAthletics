@@ -10,6 +10,7 @@
   background-position: 75%;
   color: #fff;
   box-sizing: border-box;
+  z-index: -2; /* Горизонтальное смещение 20px, вертикальное 30px */
 }
 
 .heroContent {
@@ -27,6 +28,7 @@
 }
 
 .text {
+  width: 95%;
   font-size: 1.2rem;
   line-height: 2rem;
   text-align: center;

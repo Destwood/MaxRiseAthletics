@@ -4,7 +4,7 @@ import style from "./Contact.module.css";
 function Contact() {
   return (
     <div className={style.contactWrapper}>
-      <h3 className={style.contactTitle}>Contact Us</h3>
+      <h3 className={style.contactTitle}>Замовити</h3>
       <form
         action="https://formspree.io/f/xknlgqvl"
         method="POST"
@@ -14,36 +14,36 @@ function Contact() {
           <input
             type="text"
             name="name"
-            placeholder="Name"
+            placeholder="Ім'я"
             className={`${style.name} + ${style.input}`}
           />
           <input
             type="text"
             name="surname"
-            placeholder="Surname"
+            placeholder="Фамілія"
             className={`${style.surname} + ${style.input}`}
           />
           <input
             type="email"
             name="email"
-            placeholder="Email"
+            placeholder="Електронна пошта"
             className={`${style.mail} + ${style.input}`}
           />
           <input
             type="tel"
             name="phone"
-            placeholder="Phone Number"
+            placeholder="Телефон"
             className={`${style.phone} + ${style.input}`}
           />
         </div>
         <textarea
           type="text"
           name="message"
-          placeholder="Your message"
+          placeholder="Ваше повідомлення"
           className={`${style.msg} + ${style.input}`}
         ></textarea>
         <button type="submit" className={style.submit}>
-          Submit
+          Підтвердити
         </button>
       </form>
     </div>
