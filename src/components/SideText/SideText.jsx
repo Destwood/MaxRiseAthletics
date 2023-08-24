@@ -1,21 +1,17 @@
 import React from "react";
 import style from "./SideText.module.css";
 
-let toggle = false;
-
-function SideText({ titleText, text, imgSrc }) {
-  toggle = !toggle;
-
+function SideText({ titleText, text, imgSrc, side }) {
   return (
     <div
       className={`${style.SideTextWrapper} ${
-        toggle ? style.rewersedWrapper : ""
+        side ? style.rewersedWrapper : ""
       }`}
     >
       <img src={imgSrc} alt="here" className={style.img} />
       <div
         className={`${style.textContainer} ${
-          toggle ? style.rewersedTextContainer : ""
+          side ? style.rewersedTextContainer : ""
         }`}
       >
         <p className={style.titleText}>{titleText}</p>
