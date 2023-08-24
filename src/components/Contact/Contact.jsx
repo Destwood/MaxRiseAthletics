@@ -46,6 +46,9 @@ function Contact() {
           Підтвердити
         </button>
       </form>
+      <div className={style.info}>
+        *звертайтесь за додатковою інформацією та консультацією
+      </div>
     </div>
   );
 }

@@ -14,8 +14,15 @@
   margin-bottom: 4rem;
 }
 
-.newCard {
-  background-color: red;
+.price {
+  position: absolute;
+  font-size: 1.2rem;
+  margin-left: 75%;
+  padding: 1rem 2.5rem;
+  width: fit-content;
+  background-color: #ff8026;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 1180px) {

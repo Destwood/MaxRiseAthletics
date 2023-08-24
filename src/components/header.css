@@ -4,6 +4,7 @@ header {
   margin-bottom: 0.1rem;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #00000050;
 }
 
 .headerContainer {
@@ -47,13 +48,24 @@ header {
 
 /* links */
 .links {
+  margin-left: 15%;
   display: flex;
   font-size: 1.2rem;
-  align-items: center;
 }
 
 .linksItem {
-  margin: 0 3rem;
+  padding-left: 2rem;
+  margin-right: 2rem;
+}
+
+.space::after {
+  margin-left: 2rem;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 1.5rem;
+  background-color: #0000009c;
 }
 
 .link:hover {

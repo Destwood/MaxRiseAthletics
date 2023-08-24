@@ -11,12 +11,14 @@ import "./components/header.css";
 
 import img from "./assets/big.webp";
 import test from "./assets/test.jpg";
+import sideText1 from "./assets/sideText1.png";
+import sideText3 from "./assets/sideText3.PNG";
 import bgItem from "./assets/GymBg.jpg";
 
 function App() {
   const [isMenuActive, SetIsMenuActive] = useState(false); // show burger or menu
   const [isBurgerChacked, SetisBurgerChacked] = useState(false); // burger opened
-  const [scrollOpacity, setScrollOpacity] = useState(1);
+  const [scrollOpacity, setScrollOpacity] = useState(0);
   const [showPopup, setShowPopup] = useState(false); // show popup
 
   const handleButton = () => {
@@ -77,17 +79,17 @@ function App() {
 
           {/* menu */}
           <ul className="links">
-            <li className="linksItem">
+            <li className="linksItem space">
               <a href="#about" className="link">
                 Про нас
               </a>
             </li>
-            <li className="linksItem">
+            <li className="linksItem space">
               <a href="#blocktitle" className="link">
-                Block Title
+                Результати
               </a>
             </li>
-            <li className="linksItem">
+            <li className="linksItem space">
               <a href="#services" className="link">
                 Послуги
               </a>
@@ -132,7 +134,7 @@ function App() {
             titleText={"Досвід"}
             text="Мене звати Максим Гончарук і я з впевненістю можу сказати, що є справжнім професіоналом у своїй галузі. 
             Завдяки 7-річному досвіду занять в тренажерному залі, мені вдалось вийти на рівень висококваліфікованого атлета."
-            imgSrc={img}
+            imgSrc={sideText1}
           />
           <SideText
             titleText={"Профейсійність"}
@@ -145,12 +147,12 @@ function App() {
             що з мотивацією і нашою допомогою, досягнення успіху - це лише питання часу. 
             Запрошуємо Вас долучатись і розпочати свій захоплюючий шлях до 
             здорового способу життя."
-            imgSrc={img}
+            imgSrc={sideText3}
           />
         </div>
         {/* CardsList */}
         <div className="cardsContainer container" id="blocktitle">
-          <h2 className="blockTitle title">Block Title</h2>
+          <h2 className="blockTitle title">Результати</h2>
           <CardsList />
         </div>
         <div

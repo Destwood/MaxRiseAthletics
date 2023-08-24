@@ -2,10 +2,9 @@
   background-color: #ff8026c1;
   display: flex;
   border-radius: 50px;
-  padding: 5rem;
+  padding: 1rem 5rem;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 5rem;
   color: #000;
   -webkit-box-shadow: 2px 2px 46px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 2px 46px 1px rgba(0, 0, 0, 0.75);
@@ -40,7 +39,9 @@
 }
 
 .img {
-  width: 30vw;
+  display: block;
+  height: 20rem;
+  width: 25rem;
   border-radius: 10px;
 }
 

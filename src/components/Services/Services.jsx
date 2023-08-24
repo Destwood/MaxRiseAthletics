@@ -41,6 +41,7 @@ function Services() {
           }
         />
       </div>
+      {/* <div className={style.price}>3990 грн/міс</div> */}
     </div>
   );
 }
