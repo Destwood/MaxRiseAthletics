@@ -70,9 +70,9 @@
     }
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .contactWrapper {
-    width: 100%;
+    width: fit-content;
   }
   .submit {
     width: fit-content;

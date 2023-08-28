@@ -1,17 +1,17 @@
 .latest {
-  width: 60%;
+  width: 80%;
   margin-bottom: 2rem;
+  padding: 2rem;
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.5rem;
   margin: auto;
-  padding: 2rem;
 }
 
 @media (max-width: 1024px) {
   .latest {
     width: 90%;
-    margin: auto;
   }
 }

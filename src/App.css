@@ -83,13 +83,13 @@ body {
   .sideContainer {
     padding: 2rem;
   }
+  .contactContainer {
+    padding: 2rem 0;
+    background-color: inherit;
+  }
 }
 @media (max-width: 320px) {
   .servicesContainer {
     padding: 2rem;
-  }
-  .contactContainer {
-    padding: 2rem 0;
-    background-color: inherit;
   }
 }

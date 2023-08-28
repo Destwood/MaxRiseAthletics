@@ -24,6 +24,10 @@ header {
   user-select: none;
 }
 
+.logoImg {
+  height: 3rem;
+}
+
 .logoIcon {
   background-color: #ff7f26;
   height: 2.5rem;

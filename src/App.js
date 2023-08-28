@@ -9,7 +9,7 @@ import Contact from "./components/Contact/Contact";
 import "./App.css";
 import "./components/header.css";
 
-import img from "./assets/big.webp";
+import logo from "./assets/logo.png";
 import test from "./assets/test.jpg";
 import sideText1 from "./assets/sideText1.png";
 import sideText3 from "./assets/sideText3.PNG";
@@ -71,7 +71,7 @@ function App() {
         <div className="headerContainer">
           {/* logo */}
           <a href="/" className="logo">
-            <p className="logoIcon">M</p>
+            <img className="logoImg" src={logo} alt=""></img>
             <p className="logoName">MaxRise-Athletics</p>
           </a>
           {/* logo */}

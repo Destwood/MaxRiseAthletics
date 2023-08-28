@@ -43,28 +43,32 @@
 
 @media (max-width: 1024px) {
   .SideTextWrapper {
+    flex-direction: column;
+    height: fit-content;
     width: 100%;
     padding: 2rem;
   }
   .titleText {
     font-size: 2rem;
     margin-bottom: 0;
+    text-align: center;
   }
   .text {
+    text-align: center;
     max-width: 100%;
     margin: auto;
     font-size: 1.1rem;
     padding: 1rem;
   }
   .img {
-    height: fit-content;
+    max-width: none;
+    width: 70%;
     margin-bottom: 1rem;
     border-radius: 20px;
   }
 }
 @media (max-width: 320px) {
   .SideTextWrapper {
-    flex-direction: column;
     gap: 0;
   }
   .textContainer,
@@ -79,7 +83,6 @@
     font-size: 0.75rem;
   }
   .img {
-    max-width: none;
     width: 13rem;
   }
 }

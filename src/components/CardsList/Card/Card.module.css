@@ -1,8 +1,8 @@
 .card {
+  width: 15rem;
+  height: 45vh;
   color: #fff;
   text-align: center;
-  width: 30%;
-  height: 45vh;
   background: #000000;
   box-shadow: 4px 4px 12px 3px rgba(0, 0, 0, 0.75);
   background-size: cover;
@@ -35,13 +35,9 @@
   margin-top: 1rem;
 }
 
-.img {
-  width: 20rem;
-}
-
 @media (max-width: 1024px) {
   .card {
-    width: 30%;
+    width: 45%;
     margin: 0;
   }
   .textContainer {
@@ -54,8 +50,9 @@
     font-size: 2rem;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .card {
-    width: 100%;
+    width: 20rem;
+    margin: auto;
   }
 }
