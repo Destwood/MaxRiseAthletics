@@ -7,11 +7,11 @@
 
 .services {
   margin: auto;
-  width: 90%;
+  width: fit-content;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   margin-bottom: 4rem;
+  gap: 1rem;
 }
 
 .price {
@@ -25,5 +25,7 @@
   letter-spacing: 1px;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1024px) {
+  .services {
+  }
 }

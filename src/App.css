@@ -48,6 +48,7 @@ header {
   background-color: #000;
 }
 .cardsContainer {
+  padding: 0 0 3rem 0;
 }
 
 .servicesContainer {
@@ -61,7 +62,7 @@ header {
 .title {
   font-size: 3rem;
   width: fit-content;
-  margin: 0 auto 3rem;
+  margin: 3rem auto 3rem;
 }
 
 .sideTitle {
@@ -76,4 +77,10 @@ header {
 
 body {
   overflow-y: hidden;
+}
+
+@media (max-width: 768px) {
+  .sideContainer {
+    padding: 2rem;
+  }
 }

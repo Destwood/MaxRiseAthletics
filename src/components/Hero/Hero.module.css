@@ -25,6 +25,7 @@
 .title {
   font-size: 3rem;
   letter-spacing: 2px;
+  white-space: nowrap;
 }
 
 .text {
@@ -39,6 +40,7 @@
   color: #fff;
   border: 4px solid #ffbd2e;
   background-color: transparent;
+  background-color: #ffffff08;
   padding: 1rem 3rem;
 }
 
@@ -46,4 +48,39 @@
   color: #000;
   cursor: pointer;
   background-color: #ffbd2e;
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    max-width: none;
+  }
+  .title {
+    font-size: 2.5rem;
+    width: fit-content;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.75);
+    background-color: #00000051;
+  }
+  .text {
+    font-size: 1.3rem;
+  }
+  .btn {
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .heroWrapper {
+    align-items: center;
+  }
+  .title {
+    background-color: inherit;
+    box-shadow: none;
+    font-size: 2rem;
+  }
+  .text {
+    width: 100%;
+  }
+  .btn {
+  }
 }

@@ -113,13 +113,16 @@ function App() {
         {/* dropdown menu */}
         <div className={`dropdown ${isMenuActive ? "" : "showDropdown"}`}>
           <a href="/" className="dropdownLink">
-            First
+            Про нас
           </a>
           <a href="/" className="dropdownLink">
-            Second
+            Результати
           </a>
           <a href="/" className="dropdownLink">
-            Third
+            Послуги
+          </a>
+          <a href="/" className="dropdownLink">
+            Замовити
           </a>
           {/* dropdown menu */}
         </div>
@@ -135,13 +138,13 @@ function App() {
             text="Мене звати Максим Гончарук і я з впевненістю можу сказати, що є справжнім професіоналом у своїй галузі. 
             Завдяки 7-річному досвіду занять в тренажерному залі, мені вдалось вийти на рівень висококваліфікованого атлета."
             imgSrc={sideText1}
-            side={1}
+            side={0}
           />
           <SideText
             titleText={"Профейсійність"}
             text="На нашому сайті  MaxRise athletics я та команда, ділимось своїми знаннями та підходами до тренувань і харчування. Ви знайдете важливі поради, що допоможуть Вам побудувати міцне тіло і підтримувати ефективне харчування, необхідне для досягнення Ваших цілей."
             imgSrc={test}
-            side={0}
+            side={1}
           />
           <SideText
             titleText={"Вдосконалення"}
@@ -150,7 +153,7 @@ function App() {
             Запрошуємо Вас долучатись і розпочати свій захоплюючий шлях до 
             здорового способу життя."
             imgSrc={sideText3}
-            side={1}
+            side={0}
           />
         </div>
         {/* CardsList */}

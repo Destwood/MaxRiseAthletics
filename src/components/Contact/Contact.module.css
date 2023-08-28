@@ -58,7 +58,15 @@
 
 .info {
   width: fit-content;
-  margin-left: 44%;
+  margin-left: auto;
   color: #000000b7;
   margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .inputInfo {
+    .input {
+      width: 80%;
+    }
+  }
 }

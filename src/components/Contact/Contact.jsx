@@ -11,30 +11,32 @@ function Contact() {
         className={style.form}
       >
         <div className={style.inputContainer}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Ім'я"
-            className={`${style.name} + ${style.input}`}
-          />
-          <input
-            type="text"
-            name="surname"
-            placeholder="Фамілія"
-            className={`${style.surname} + ${style.input}`}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Електронна пошта"
-            className={`${style.mail} + ${style.input}`}
-          />
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Телефон"
-            className={`${style.phone} + ${style.input}`}
-          />
+          <div className={style.inputInfo}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Ім'я"
+              className={`${style.name} + ${style.input}`}
+            />
+            <input
+              type="text"
+              name="surname"
+              placeholder="Прізвище"
+              className={`${style.surname} + ${style.input}`}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Електронна пошта"
+              className={`${style.mail} + ${style.input}`}
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Телефон"
+              className={`${style.phone} + ${style.input}`}
+            />
+          </div>
         </div>
         <textarea
           type="text"

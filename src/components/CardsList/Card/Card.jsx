@@ -9,10 +9,10 @@ function LatestCard({ titleText, text, img }) {
         backgroundImage: `${img}`,
       }}
     >
-      <div className={style.textContainer}>
+      {/* <div className={style.textContainer}>
         <h5 className={style.title}>{titleText}</h5>
         <p className={style.text}>{text}</p>
-      </div>
+      </div> */}
     </div>
   );
 }
