@@ -46,12 +46,12 @@
     justify-content: space-evenly;
     flex-basis: 48%;
   }
+}
+@media (max-width: 320px) {
+  .cardWrapper {
+    flex-basis: 100%;
+  }
   .card {
-  }
-  .img {
-  }
-  .title {
-  }
-  .text {
+    height: fit-content;
   }
 }

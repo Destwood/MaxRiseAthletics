@@ -24,8 +24,3 @@
   color: #fff;
   letter-spacing: 1px;
 }
-
-@media (max-width: 1024px) {
-  .services {
-  }
-}

@@ -77,8 +77,21 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .footer {
     width: 90%;
+  }
+  .descTitle {
+    font-size: 1.2rem;
+  }
+  .descText {
+    font-size: 0.7rem;
+  }
+
+  .socialTitle {
+    font-size: 1.2rem;
+  }
+  .linkName {
+    font-size: 1rem;
   }
 }

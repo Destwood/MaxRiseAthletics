@@ -54,3 +54,8 @@
     font-size: 2rem;
   }
 }
+@media (max-width: 320px) {
+  .card {
+    width: 100%;
+  }
+}

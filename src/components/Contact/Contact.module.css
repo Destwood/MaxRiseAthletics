@@ -70,3 +70,13 @@
     }
   }
 }
+@media (max-width: 1024px) {
+  .contactWrapper {
+    width: 100%;
+  }
+  .submit {
+    width: fit-content;
+    padding: 0 1rem;
+    line-height: normal;
+  }
+}

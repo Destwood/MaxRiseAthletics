@@ -3,15 +3,13 @@
   display: flex;
   border-radius: 50px;
   padding: 1rem 5rem;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   color: #000;
-  -webkit-box-shadow: 2px 2px 46px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 2px 46px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 2px 46px 1px rgba(0, 0, 0, 0.75);
   height: 60vh;
   width: 75%;
   margin: 0 auto 2.5rem;
+  gap: 2rem;
 }
 
 .rewersedWrapper {
@@ -20,12 +18,10 @@
 }
 
 .textContainer {
-  margin: 5rem 0 5rem 5rem;
 }
 
 .rewersedTextContainer {
   text-align: right;
-  margin: 5rem 5rem 5rem 0;
 }
 .titleText {
   font-size: 2.5rem;
@@ -35,13 +31,13 @@
 }
 
 .text {
-  font-size: 1.3rem;
+  font-size: 1.4vw;
 }
 
 .img {
   display: block;
-  height: 20rem;
-  width: 25rem;
+
+  max-width: 50%;
   border-radius: 10px;
 }
 
@@ -49,11 +45,6 @@
   .SideTextWrapper {
     width: 100%;
     padding: 2rem;
-  }
-  .textContainer,
-  .rewersedTextContainer {
-    text-align: center;
-    margin: 0;
   }
   .titleText {
     font-size: 2rem;
@@ -66,9 +57,29 @@
     padding: 1rem;
   }
   .img {
-    max-width: 50%;
     height: fit-content;
     margin-bottom: 1rem;
     border-radius: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .SideTextWrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+  .textContainer,
+  .rewersedTextContainer {
+    text-align: center;
+  }
+  .titleText {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .text {
+    font-size: 0.75rem;
+  }
+  .img {
+    max-width: none;
+    width: 13rem;
   }
 }

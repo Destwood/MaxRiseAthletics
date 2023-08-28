@@ -18,7 +18,7 @@ function Footer() {
           <p>©MaxRise Athletics</p>
         </div>
 
-        <div className={style.footerItem + " " + style.social}>
+        <div className={style.footerItem + style.social}>
           <h5 className={style.socialTitle}>Contuct us</h5>
           <div className={style.socialLinks}>
             <div className={style.instagram + " " + style.socialLink}>

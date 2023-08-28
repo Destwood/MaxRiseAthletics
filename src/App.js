@@ -26,7 +26,6 @@ function App() {
   };
 
   const handleBurgerChange = (event) => {
-    console.log("change button", isBurgerChacked);
     SetisBurgerChacked(event.target.checked);
   };
 
