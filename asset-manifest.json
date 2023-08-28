@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/MaxRiseAthletics/static/css/main.be56cba9.css",
-    "main.js": "/MaxRiseAthletics/static/js/main.cf894a60.js",
+    "main.css": "/MaxRiseAthletics/static/css/main.87c96c8c.css",
+    "main.js": "/MaxRiseAthletics/static/js/main.677da1af.js",
     "static/media/sixth.jpeg": "/MaxRiseAthletics/static/media/sixth.a5d1c0456578c75169e4.jpeg",
     "static/media/first.jpeg": "/MaxRiseAthletics/static/media/first.623067e4788052c0d4f8.jpeg",
     "static/media/sideText1.png": "/MaxRiseAthletics/static/media/sideText1.f18911899c7166410526.png",
-    "static/media/big.webp": "/MaxRiseAthletics/static/media/big.177ac271ddadbd08400c.webp",
     "static/media/fourth.jpg": "/MaxRiseAthletics/static/media/fourth.b41751e0094875e9195e.jpg",
     "static/media/sportNutrition.jpg": "/MaxRiseAthletics/static/media/sportNutrition.9f9a510d0a6afefbf4c6.jpg",
     "static/media/sideText3.PNG": "/MaxRiseAthletics/static/media/sideText3.bc44340fe956965d6386.PNG",
@@ -14,6 +13,7 @@
     "static/media/cardThird.jpg": "/MaxRiseAthletics/static/media/cardThird.2897f285fb578d5f995d.jpg",
     "static/media/second.jpeg": "/MaxRiseAthletics/static/media/second.66c5876cd5b83dde84ec.jpeg",
     "static/media/fifth.jpg": "/MaxRiseAthletics/static/media/fifth.06da963d4aebb32ec4c5.jpg",
+    "static/media/logo.png": "/MaxRiseAthletics/static/media/logo.60645cc488d8c53f493d.png",
     "static/media/instagram.svg": "/MaxRiseAthletics/static/media/instagram.02deb4a036f67188dcee21915b601929.svg",
     "static/media/gym.svg": "/MaxRiseAthletics/static/media/gym.2722e063d8b1dae1bf32a1a3679ea519.svg",
     "static/media/food.svg": "/MaxRiseAthletics/static/media/food.f7964f739a38a360bb5c683e643ba76e.svg",
@@ -22,11 +22,11 @@
     "static/media/mail.svg": "/MaxRiseAthletics/static/media/mail.cba38fa4e20f7cb8f8c1498304155481.svg",
     "static/media/clock.svg": "/MaxRiseAthletics/static/media/clock.50550fb8485cfa2be87efa4e245fc694.svg",
     "index.html": "/MaxRiseAthletics/index.html",
-    "main.be56cba9.css.map": "/MaxRiseAthletics/static/css/main.be56cba9.css.map",
-    "main.cf894a60.js.map": "/MaxRiseAthletics/static/js/main.cf894a60.js.map"
+    "main.87c96c8c.css.map": "/MaxRiseAthletics/static/css/main.87c96c8c.css.map",
+    "main.677da1af.js.map": "/MaxRiseAthletics/static/js/main.677da1af.js.map"
   },
   "entrypoints": [
-    "static/css/main.be56cba9.css",
-    "static/js/main.cf894a60.js"
+    "static/css/main.87c96c8c.css",
+    "static/js/main.677da1af.js"
   ]
 }
