@@ -1,5 +1,5 @@
 .card {
-  width: 15rem;
+  width: 20rem;
   height: 45vh;
   color: #fff;
   text-align: center;
@@ -54,5 +54,10 @@
   .card {
     width: 20rem;
     margin: auto;
+  }
+}
+@media (max-width: 1440px) {
+  .card {
+    width: 20rem;
   }
 }

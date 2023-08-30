@@ -10,11 +10,7 @@ function Footer() {
       <div className={style.footer}>
         <div className={style.footerItem}>
           <h4 className={style.descTitle}>MaxRise Athletics</h4>
-          <p className={style.descText}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s
-          </p>
+          <p className={style.descText}> </p>
           <p>©MaxRise Athletics</p>
         </div>
 

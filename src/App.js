@@ -111,16 +111,16 @@ function App() {
         </div>
         {/* dropdown menu */}
         <div className={`dropdown ${isMenuActive ? "" : "showDropdown"}`}>
-          <a href="/" className="dropdownLink">
+          <a href="#about" className="dropdownLink">
             Про нас
           </a>
-          <a href="/" className="dropdownLink">
+          <a href="#blocktitle" className="dropdownLink">
             Результати
           </a>
-          <a href="/" className="dropdownLink">
+          <a href="#services" className="dropdownLink">
             Послуги
           </a>
-          <a href="/" className="dropdownLink">
+          <a href="#order" className="dropdownLink">
             Замовити
           </a>
           {/* dropdown menu */}

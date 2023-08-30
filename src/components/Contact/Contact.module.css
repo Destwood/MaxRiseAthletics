@@ -74,12 +74,28 @@
   }
 }
 @media (max-width: 768px) {
+  .contactTitle {
+    font-size: 2.3rem;
+  }
+  .inputInfo {
+    .input {
+      width: 100%;
+    }
+  }
   .contactWrapper {
     width: fit-content;
+    box-sizing: border-box;
   }
   .submit {
     width: fit-content;
     padding: 0 1rem;
     line-height: normal;
+  }
+  .info {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .descText {
+    content: "asdsad";
   }
 }

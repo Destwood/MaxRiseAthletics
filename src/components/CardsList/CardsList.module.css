@@ -9,6 +9,11 @@
   gap: 1.5rem;
   margin: auto;
 }
+@media (max-width: 1440px) {
+  .latest {
+    justify-content: center;
+  }
+}
 
 @media (max-width: 1024px) {
   .latest {
