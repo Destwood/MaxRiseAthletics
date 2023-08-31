@@ -37,42 +37,6 @@ header {
   background-color: #fff;
 }
 
-/* containers */
-
-.container {
-  padding: 5rem;
-  background-size: cover;
-}
-
-.sideContainer {
-  background-color: #000;
-}
-.cardsContainer {
-  padding: 0 0 3rem 0;
-}
-
-.servicesContainer {
-}
-.contactContainer {
-  background-color: #ff7f26;
-}
-
-/* sideContainer */
-
-.title {
-  font-size: 3rem;
-  width: fit-content;
-  margin: 3rem auto 3rem;
-}
-
-.sideTitle {
-  color: #fff;
-}
-
-.blockTitle {
-  color: #000;
-}
-
 /* popup */
 
 body {

@@ -6,10 +6,13 @@ import gym from "../../assets/gym.svg";
 import phone from "../../assets/phone.svg";
 import food from "../../assets/food.svg";
 import clock from "../../assets/clock.svg";
-
+import bgItem from "../../assets/GymBg.jpg";
 function Services() {
   return (
-    <div className={style.servicesWrapper}>
+    <div
+      className={style.servicesWrapper}
+      style={{ backgroundImage: `url(${bgItem})` }}
+    >
       <h3 className={style.servicesTitle}>Послуги</h3>
       <div className={style.services}>
         <Card

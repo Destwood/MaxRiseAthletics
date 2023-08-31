@@ -1,8 +1,15 @@
-.latest {
-  width: 80%;
-  margin-bottom: 2rem;
-  padding: 2rem;
+.wrapper {
+  padding: 2rem 0;
+}
 
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.result {
+  width: 80%;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -10,13 +17,13 @@
   margin: auto;
 }
 @media (max-width: 1440px) {
-  .latest {
+  .result {
     justify-content: center;
   }
 }
 
 @media (max-width: 1024px) {
-  .latest {
+  .result {
     width: 90%;
   }
 }

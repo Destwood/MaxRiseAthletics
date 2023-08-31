@@ -1,4 +1,10 @@
 .contactWrapper {
+  width: 100%;
+  background-color: #ff7f26;
+  margin: auto;
+  padding: 5rem;
+}
+.contactContent {
   width: 70%;
   background-color: #fff;
   margin: auto;
@@ -82,7 +88,7 @@
       width: 100%;
     }
   }
-  .contactWrapper {
+  .contactContent {
     width: fit-content;
     box-sizing: border-box;
   }

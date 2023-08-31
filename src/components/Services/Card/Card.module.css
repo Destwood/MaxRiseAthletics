@@ -8,7 +8,7 @@
 .card {
   height: 23rem;
   padding: 2rem;
-  background: #ff7f26;
+  background-color: #ff7f26;
   -webkit-box-shadow: 4px 4px 12px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 4px 12px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 4px 12px 3px rgba(0, 0, 0, 0.75);
@@ -46,8 +46,11 @@
   .cardWrapper {
     flex-basis: 48%;
   }
+  .card {
+    height: 20rem;
+  }
   .text {
-    height: 10rem;
+    height: 5rem;
   }
 }
 @media (max-width: 768px) {

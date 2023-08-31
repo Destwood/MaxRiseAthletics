@@ -1,20 +1,18 @@
 .SideTextWrapper {
-  background-color: #ff8026c1;
   display: flex;
-  border-radius: 50px;
-  padding: 1rem 5rem;
+  padding: 5rem 3rem;
   justify-content: space-between;
   align-items: center;
   color: #000;
-  height: 60vh;
-  width: 75%;
+  width: 90%;
   margin: 0 auto 2.5rem;
   gap: 2rem;
+  background-color: #fff;
 }
 
 .rewersedWrapper {
   flex-direction: row-reverse;
-  background-color: #fff;
+  background-color: #ff8026c1;
 }
 
 .textContainer {
@@ -23,7 +21,7 @@
 .rewersedTextContainer {
   text-align: right;
 }
-.titleText {
+.title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -35,36 +33,47 @@
 }
 
 .img {
+  height: 20rem;
   display: block;
+}
 
-  max-width: 50%;
-  border-radius: 10px;
+@media (max-width: 1440px) {
+  .title {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 1024px) {
   .SideTextWrapper {
-    flex-direction: column;
-    height: fit-content;
-    width: 100%;
-    padding: 2rem;
-  }
-  .titleText {
-    font-size: 2rem;
-    margin-bottom: 0;
     text-align: center;
+  }
+  .title {
+    text-align: center;
+    margin: 0;
   }
   .text {
     text-align: center;
-    max-width: 100%;
     margin: auto;
     font-size: 1.1rem;
     padding: 1rem;
   }
   .img {
-    max-width: none;
-    width: 70%;
-    margin-bottom: 1rem;
-    border-radius: 20px;
+    height: 15rem;
+  }
+}
+@media (max-width: 786px) {
+  .SideTextWrapper {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .title {
+  }
+  .text {
+    width: 80%;
+  }
+  .img {
+    height: 90%;
+    width: 90%;
   }
 }
 @media (max-width: 320px) {
@@ -75,7 +84,7 @@
   .rewersedTextContainer {
     text-align: center;
   }
-  .titleText {
+  .title {
     font-size: 1.5rem;
     text-align: center;
   }

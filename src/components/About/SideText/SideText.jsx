@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./SideText.module.css";
 
-function SideText({ titleText, text, imgSrc, side }) {
+function SideText({ title, text, imgSrc, side }) {
   return (
     <div
       className={`${style.SideTextWrapper} ${
@@ -14,7 +14,7 @@ function SideText({ titleText, text, imgSrc, side }) {
           side ? style.rewersedTextContainer : ""
         }`}
       >
-        <p className={style.titleText}>{titleText}</p>
+        <p className={style.title}>{title}</p>
         <p className={style.text}>{text}</p>
       </div>
     </div>

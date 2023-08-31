@@ -43,11 +43,16 @@
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 6px;
+  color: #fff;
 }
 
 .input::placeholder {
   color: #ffffff91;
   letter-spacing: 3px;
+}
+
+.input:focus {
+  caret-color: #fff;
 }
 
 .input:focus::placeholder {
