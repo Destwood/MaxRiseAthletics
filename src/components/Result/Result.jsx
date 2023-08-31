@@ -5,7 +5,7 @@ import style from "./Result.module.css";
 import img from "../../assets/sportNutrition.jpg";
 
 import first from "../../assets/first.jpeg";
-import second from "../../assets/second.jpeg";
+import second from "../../assets/second.png";
 import fourth from "../../assets/fourth.jpg";
 import third from "../../assets/cardThird.jpg";
 import fifth from "../../assets/fifth.jpg";
