@@ -26,7 +26,7 @@ function Popup({ showPopup, setShowPopup }) {
             <input
               type="text"
               name="surname"
-              placeholder="Фамілія"
+              placeholder="Прізвище"
               className={`${style.surname} + ${style.input}`}
             />
             <input
