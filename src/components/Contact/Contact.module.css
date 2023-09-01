@@ -80,6 +80,9 @@
   }
 }
 @media (max-width: 768px) {
+  .contactWrapper {
+    padding: 1rem;
+  }
   .contactTitle {
     font-size: 2.3rem;
   }
