@@ -4,15 +4,16 @@ import style from "./Header.module.css";
 import logo from "../../assets/logo.png";
 function Header() {
   const [isMenuActive, SetIsMenuActive] = useState(false); // show burger or menu
-  const [isBurgerChacked, SetisBurgerChacked] = useState(false); // burger opened
+  const [isBurgerChached, SetisBurgerChached] = useState(false); // burger opened
   const [scrollOpacity, setScrollOpacity] = useState(1);
+
   const handleBurgerChange = (event) => {
-    SetisBurgerChacked(event.target.checked);
+    SetisBurgerChached(event.target.checked);
   };
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 1024 && isBurgerChacked) {
+      if (window.innerWidth <= 1024 && isBurgerChached) {
         SetIsMenuActive(true);
       } else {
         SetIsMenuActive(false);
@@ -36,7 +37,7 @@ function Header() {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isBurgerChacked]);
+  }, [isBurgerChached]);
 
   return (
     <header style={{ opacity: scrollOpacity }}>
@@ -44,7 +45,6 @@ function Header() {
         {/* logo */}
         <a href="/" className={style.logo}>
           <img className={style.logoImg} src={logo} alt=""></img>
-
           <p className={style.logoName}>MaxRise-Athletics</p>
         </a>
         {/* logo */}
@@ -57,7 +57,7 @@ function Header() {
             </a>
           </li>
           <li className={`${style.linksItem} ${style.space}`}>
-            <a href="#blocktitle" className={style.link}>
+            <a href="#results" className={style.link}>
               Результати
             </a>
           </li>
@@ -75,7 +75,12 @@ function Header() {
         {/* menu */}
         {/* burger */}
         <label className={style.burger} htmlFor="burger">
-          <input type="checkbox" id="burger" onClick={handleBurgerChange} />
+          <input
+            type="checkbox"
+            id="burger"
+            onChange={handleBurgerChange}
+            checked={isBurgerChached}
+          />
           <span></span>
           <span></span>
           <span></span>
@@ -92,17 +97,17 @@ function Header() {
           href="#about"
           className={style.dropdownLink}
           onClick={() => {
-            SetisBurgerChacked(false);
+            SetisBurgerChached(false);
             SetIsMenuActive(false);
           }}
         >
           Про нас
         </a>
         <a
-          href="#blocktitle"
+          href="#results"
           className={style.dropdownLink}
           onClick={() => {
-            SetisBurgerChacked(false);
+            SetisBurgerChached(false);
             SetIsMenuActive(false);
           }}
         >
@@ -112,7 +117,7 @@ function Header() {
           href="#services"
           className={style.dropdownLink}
           onClick={() => {
-            SetisBurgerChacked(false);
+            SetisBurgerChached(false);
             SetIsMenuActive(false);
           }}
         >
@@ -122,7 +127,7 @@ function Header() {
           href="#order"
           className={style.dropdownLink}
           onClick={() => {
-            SetisBurgerChacked(false);
+            SetisBurgerChached(false);
             SetIsMenuActive(false);
           }}
         >

@@ -12,6 +12,7 @@ function Services() {
     <div
       className={style.servicesWrapper}
       style={{ backgroundImage: `url(${bgItem})` }}
+      id="services"
     >
       <h3 className={style.servicesTitle}>Послуги</h3>
       <div className={style.services}>

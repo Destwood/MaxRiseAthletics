@@ -13,7 +13,7 @@ import sixth from "../../assets/sixth.jpeg";
 
 function CardList() {
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} id="results">
       <div className={style.title}>Результати</div>
       <div className={style.result}>
         <Card

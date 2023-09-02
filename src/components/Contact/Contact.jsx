@@ -3,7 +3,7 @@ import style from "./Contact.module.css";
 
 function Contact() {
   return (
-    <div className={style.contactWrapper}>
+    <div className={style.contactWrapper} id="order">
       <div className={style.contactContent}>
         <h3 className={style.contactTitle}>Замовити</h3>
         <form
