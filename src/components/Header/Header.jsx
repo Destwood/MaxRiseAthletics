@@ -88,16 +88,44 @@ function Header() {
           isMenuActive ? "" : style.showDropdown
         }`}
       >
-        <a href="#about" className={style.dropdownLink}>
+        <a
+          href="#about"
+          className={style.dropdownLink}
+          onClick={() => {
+            SetisBurgerChacked(false);
+            SetIsMenuActive(false);
+          }}
+        >
           Про нас
         </a>
-        <a href="#blocktitle" className={style.dropdownLink}>
+        <a
+          href="#blocktitle"
+          className={style.dropdownLink}
+          onClick={() => {
+            SetisBurgerChacked(false);
+            SetIsMenuActive(false);
+          }}
+        >
           Результати
         </a>
-        <a href="#services" className={style.dropdownLink}>
+        <a
+          href="#services"
+          className={style.dropdownLink}
+          onClick={() => {
+            SetisBurgerChacked(false);
+            SetIsMenuActive(false);
+          }}
+        >
           Послуги
         </a>
-        <a href="#order" className={style.dropdownLink}>
+        <a
+          href="#order"
+          className={style.dropdownLink}
+          onClick={() => {
+            SetisBurgerChacked(false);
+            SetIsMenuActive(false);
+          }}
+        >
           Замовити
         </a>
         {/* dropdown menu */}
