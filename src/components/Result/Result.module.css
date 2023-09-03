@@ -16,6 +16,10 @@
   gap: 1.5rem;
   margin: auto;
 }
+
+.slider {
+  display: none;
+}
 @media (max-width: 1440px) {
   .result {
     justify-content: center;
@@ -25,5 +29,15 @@
 @media (max-width: 1024px) {
   .result {
     width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .slider {
+    display: block;
+    width: fit-content;
+    margin: 2rem auto;
+  }
+  .result {
+    display: none;
   }
 }

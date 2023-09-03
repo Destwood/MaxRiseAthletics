@@ -1,4 +1,5 @@
 import React from "react";
+import SimpleImageSlider from "react-simple-image-slider";
 import Card from "./Card/Card";
 import style from "./Result.module.css";
 
@@ -11,10 +12,23 @@ import third from "../../assets/cardThird.jpg";
 import fifth from "../../assets/fifth.jpg";
 import sixth from "../../assets/sixth.jpeg";
 
+const images = [first, second, third, fourth, fifth, sixth];
+
 function CardList() {
   return (
     <div className={style.wrapper} id="results">
       <div className={style.title}>Результати</div>
+      <div className={style.slider}>
+        <SimpleImageSlider
+          width={400}
+          height={550}
+          images={images}
+          showBullets={true}
+          showNavs={true}
+          loop={true}
+        />
+      </div>
+
       <div className={style.result}>
         <Card
           img={`url(${first})`}

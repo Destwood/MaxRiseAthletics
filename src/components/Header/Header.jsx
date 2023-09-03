@@ -3,8 +3,8 @@ import style from "./Header.module.css";
 
 import logo from "../../assets/logo.png";
 function Header() {
-  const [isMenuActive, SetIsMenuActive] = useState(false); // show burger or menu
-  const [isBurgerChached, SetisBurgerChached] = useState(false); // burger opened
+  const [isMenuActive, SetIsMenuActive] = useState(false);
+  const [isBurgerChached, SetisBurgerChached] = useState(false);
   const [scrollOpacity, setScrollOpacity] = useState(1);
 
   const handleBurgerChange = (event) => {
