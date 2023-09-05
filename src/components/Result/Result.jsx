@@ -20,10 +20,10 @@ function CardList() {
       <div className={style.title}>Результати</div>
       <div className={style.slider}>
         <SimpleImageSlider
-          width={400}
+          width={"100%"}
           height={550}
           images={images}
-          showBullets={true}
+          showBullets={false}
           showNavs={true}
           loop={true}
         />
