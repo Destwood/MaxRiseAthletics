@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MaxRiseAthletics/static/css/main.2898d5ac.css",
-    "main.js": "/MaxRiseAthletics/static/js/main.1fd897a1.js",
+    "main.css": "/MaxRiseAthletics/static/css/main.efde1bea.css",
+    "main.js": "/MaxRiseAthletics/static/js/main.891a0a1d.js",
     "static/media/sixth.jpeg": "/MaxRiseAthletics/static/media/sixth.a5d1c0456578c75169e4.jpeg",
     "static/media/first.jpeg": "/MaxRiseAthletics/static/media/first.623067e4788052c0d4f8.jpeg",
     "static/media/sideText1.png": "/MaxRiseAthletics/static/media/sideText1.f18911899c7166410526.png",
@@ -21,12 +21,13 @@
     "static/media/phone.svg": "/MaxRiseAthletics/static/media/phone.07edc54b29f0fe76666b4b860653723a.svg",
     "static/media/mail.svg": "/MaxRiseAthletics/static/media/mail.cba38fa4e20f7cb8f8c1498304155481.svg",
     "static/media/clock.svg": "/MaxRiseAthletics/static/media/clock.50550fb8485cfa2be87efa4e245fc694.svg",
+    "static/media/star.svg": "/MaxRiseAthletics/static/media/star.0f1827377cacebf82c286bc235e3aab1.svg",
     "index.html": "/MaxRiseAthletics/index.html",
-    "main.2898d5ac.css.map": "/MaxRiseAthletics/static/css/main.2898d5ac.css.map",
-    "main.1fd897a1.js.map": "/MaxRiseAthletics/static/js/main.1fd897a1.js.map"
+    "main.efde1bea.css.map": "/MaxRiseAthletics/static/css/main.efde1bea.css.map",
+    "main.891a0a1d.js.map": "/MaxRiseAthletics/static/js/main.891a0a1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.2898d5ac.css",
-    "static/js/main.1fd897a1.js"
+    "static/css/main.efde1bea.css",
+    "static/js/main.891a0a1d.js"
   ]
 }
