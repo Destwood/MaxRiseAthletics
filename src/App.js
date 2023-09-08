@@ -13,10 +13,6 @@ import Header from "./components/Header/Header";
 function App() {
   const [showPopup, setShowPopup] = useState(false); // show popup
 
-  const handleButton = () => {
-    setShowPopup(true);
-  };
-
   useEffect(() => {
     setTimeout(() => {
       setShowPopup(true);
@@ -34,7 +30,7 @@ function App() {
       <Header />
 
       <main>
-        <Hero handleButtonClick={handleButton} />
+        <Hero />
         <About />
         <Results />
         <Services />

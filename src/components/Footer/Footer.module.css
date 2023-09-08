@@ -20,6 +20,7 @@
 
 .descTitle {
   font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .descText {
@@ -40,7 +41,8 @@
 
 .socialTitle {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin: 0 3.1rem 1rem auto;
+  width: fit-content;
 }
 
 .socialLink {

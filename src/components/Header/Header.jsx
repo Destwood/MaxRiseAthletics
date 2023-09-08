@@ -2,10 +2,13 @@ import React, { useState, useEffect } from "react";
 import style from "./Header.module.css";
 
 import logo from "../../assets/logo.png";
+import telegram from "../../assets/telegram.svg";
+import instagram from "../../assets/instagram.svg";
+import star from "../../assets/star.svg";
+
 function Header() {
   const [isMenuActive, SetIsMenuActive] = useState(false);
   const [isBurgerChached, SetisBurgerChached] = useState(false);
-  const [scrollOpacity, setScrollOpacity] = useState(1);
 
   const handleBurgerChange = (event) => {
     SetisBurgerChached(event.target.checked);
@@ -25,22 +28,13 @@ function Header() {
     handleResize();
     window.addEventListener("resize", handleResize);
 
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-
-      const opacity = scrollTop / 300;
-      setScrollOpacity(opacity);
-    };
-
-    window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("resize", handleResize);
-      window.removeEventListener("scroll", handleScroll);
     };
   }, [isBurgerChached]);
 
   return (
-    <header style={{ opacity: scrollOpacity }}>
+    <header>
       <div className={style.headerContainer}>
         {/* logo */}
         <a href="/" className={style.logo}>
@@ -88,11 +82,7 @@ function Header() {
         {/* burger */}
       </div>
       {/* dropdown menu */}
-      <div
-        className={`${style.dropdown} ${
-          isMenuActive ? "" : style.showDropdown
-        }`}
-      >
+      <div className={`${isMenuActive ? style.dropdown : style.showDropdown}`}>
         <a
           href="#about"
           className={style.dropdownLink}
@@ -134,6 +124,40 @@ function Header() {
           Замовити
         </a>
         {/* dropdown menu */}
+        <div className="">
+          <div className={style.socialLinks}>
+            <div className={style.telegram + " " + style.socialLink}>
+              <a
+                href="https://t.me/MaxRise_Athletics"
+                className={style.link}
+                target="blank"
+              >
+                <img src={telegram} alt="telegram" className={style.linkLogo} />
+              </a>
+            </div>
+
+            <div className={style.mail + " " + style.socialLink}>
+              <a
+                href="https://instagram.com/maxrise_athletics?igshid=MzRlODBiNWFlZA=="
+                className={style.link}
+                target="blank"
+              >
+                <img src={instagram} alt="inst" className={style.linkLogo} />
+              </a>
+            </div>
+          </div>
+          <a
+            href="#order"
+            className={style.button}
+            onClick={() => {
+              SetisBurgerChached(false);
+              SetIsMenuActive(false);
+            }}
+          >
+            <img src={star} alt="" className={style.linkLogo} />
+            Записатись
+          </a>
+        </div>
       </div>
     </header>
   );

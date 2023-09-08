@@ -18,7 +18,7 @@ function CardList() {
   return (
     <div className={style.wrapper} id="results">
       <div className={style.title}>Результати</div>
-      <div className={style.slider}>
+      {/* <div className={style.slider}>
         <SimpleImageSlider
           width={"100%"}
           height={550}
@@ -27,7 +27,7 @@ function CardList() {
           showNavs={true}
           loop={true}
         />
-      </div>
+      </div> */}
 
       <div className={style.result}>
         <Card

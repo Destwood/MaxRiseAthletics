@@ -11,6 +11,15 @@ function Popup({ showPopup, setShowPopup }) {
     >
       <div className={style.popupContent} onClick={(e) => e.stopPropagation()}>
         <h3 className={style.title}>Замовити</h3>
+
+        <div
+          className={style.close}
+          onClick={() => {
+            setShowPopup(false);
+          }}
+        >
+          Х
+        </div>
         <form
           action="https://formspree.io/f/xknlgqvl"
           method="POST"

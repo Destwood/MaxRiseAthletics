@@ -14,6 +14,7 @@
 /* content */
 
 .popupContent {
+  position: relative;
   background-color: #ff7f26;
   border-radius: 50px;
   padding: 3rem;
@@ -77,6 +78,8 @@
   font-weight: 500;
   font-size: 1.5rem;
   letter-spacing: 1px;
+  color: #000;
+  background-color: #fff;
 }
 
 .submit:hover {
@@ -92,11 +95,32 @@
   display: none;
 }
 
+.close {
+  position: absolute;
+  top: 1.3rem;
+  right: 1.7rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.close:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 1024px) {
+  .input {
+    width: 80%;
+  }
   .popupContent {
     width: 40%;
-    min-width: 25rem;
-    height: 90%;
+    min-width: 21rem;
+    height: 37rem;
+  }
+  .close {
+    top: 1.5rem;
+    right: 1.9rem;
+    font-weight: normal;
+    font-size: 1.3rem;
   }
 }
 /* @media (max-width: 320px) {

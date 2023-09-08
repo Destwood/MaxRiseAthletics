@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Hero.module.css";
 
-function Hero({ handleButtonClick }) {
+function Hero() {
   return (
     <div className={style.heroWrapper}>
       <div className={style.heroContent}>
@@ -11,9 +11,9 @@ function Hero({ handleButtonClick }) {
           Незалежно від вашого досвіду та фізичної підготовки, ви знайдете
           відповідні рекомендації для розвитку вашого тіла та духу.
         </p>
-        <button className={style.btn} onClick={handleButtonClick}>
+        <a href="#order" className={style.btn}>
           Замовити
-        </button>
+        </a>
       </div>
     </div>
   );

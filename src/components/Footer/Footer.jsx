@@ -12,12 +12,12 @@ function Footer() {
       <div className={style.footer}>
         <div className={style.footerItem}>
           <h4 className={style.descTitle}>MaxRise Athletics</h4>
-          <p className={style.descText}> </p>
+          {/* <p className={style.descText}> </p> */}
           <p>©MaxRise Athletics</p>
         </div>
 
         <div className={style.footerItem + style.social}>
-          <h5 className={style.socialTitle}>Contuct us</h5>
+          <h5 className={style.socialTitle}>Контакти</h5>
           <div className={style.socialLinks}>
             <div className={style.instagram + " " + style.socialLink}>
               <a href="tel:098 908 54 50" className={style.link}>
@@ -27,25 +27,51 @@ function Footer() {
             </div>
 
             <div className={style.instagram + " " + style.socialLink}>
-              <a href="/" className={style.link}>
+              <a
+                href="https://instagram.com/maxrise_athletics?igshid=MzRlODBiNWFlZA=="
+                className={style.link}
+                target="blank"
+              >
                 <p className={style.linkName}>Instagram</p>
                 <img src={inst} alt="inst" className={style.logo} />
               </a>
             </div>
 
             <div className={style.telegram + " " + style.socialLink}>
-              <a href="/" className={style.link}>
+              <a
+                href="https://t.me/MaxRise_Athletics"
+                className={style.link}
+                target="blank"
+              >
                 <p className={style.linkName}>Telegram</p>
                 <img src={telegram} alt="inst" className={style.logo} />
               </a>
             </div>
 
             <div className={style.mail + " " + style.socialLink}>
-              <a href="/" className={style.link}>
+              <a
+                href="mailto:maxrise.athletics@gmail.com"
+                className={style.link}
+              >
                 <p className={style.linkName}>Mail</p>
                 <img src={mail} alt="inst" className={style.logo} />
               </a>
             </div>
+            {/* <a
+                href="https://t.me/MaxRise_Athletics"
+                className={style.link}
+                target="blank"
+              >
+                <img src={telegram} alt="telegram" className={style.linkLogo} />
+              </a>
+            </div>
+
+            <div className={style.mail + " " + style.socialLink}>
+              <a
+                href="https://instagram.com/maxrise_athletics?igshid=MzRlODBiNWFlZA=="
+                className={style.link}
+                target="blank"
+              > */}
           </div>
         </div>
       </div>

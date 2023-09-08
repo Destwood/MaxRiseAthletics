@@ -37,6 +37,6 @@
     width: fit-content;
   }
   .result {
-    display: none;
+    /* display: none; */
   }
 }
