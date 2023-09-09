@@ -31,24 +31,28 @@ function Popup({ showPopup, setShowPopup }) {
               name="name"
               placeholder="Ім'я"
               className={`${style.name} + ${style.input}`}
+              required
             />
             <input
               type="text"
               name="surname"
               placeholder="Прізвище"
               className={`${style.surname} + ${style.input}`}
+              required
             />
             <input
               type="email"
               name="email"
               placeholder="Електронна пошта"
               className={`${style.mail} + ${style.input}`}
+              required
             />
             <input
               type="tel"
               name="phone"
               placeholder="Телефон"
               className={`${style.phone} + ${style.input}`}
+              required
             />
           </div>
           <textarea

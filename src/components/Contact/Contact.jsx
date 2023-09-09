@@ -18,31 +18,35 @@ function Contact() {
                 name="name"
                 placeholder="Ім'я"
                 className={`${style.name} + ${style.input}`}
+                required
               />
               <input
                 type="text"
                 name="surname"
                 placeholder="Прізвище"
                 className={`${style.surname} + ${style.input}`}
+                required
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Електронна пошта"
                 className={`${style.mail} + ${style.input}`}
+                required
               />
               <input
                 type="tel"
                 name="phone"
                 placeholder="Телефон"
                 className={`${style.phone} + ${style.input}`}
+                required
               />
             </div>
           </div>
           <textarea
             type="text"
             name="message"
-            placeholder="Ваше повідомлення"
+            placeholder="Ваше повідомлення (необов‘язково)"
             className={`${style.msg} + ${style.input}`}
           ></textarea>
           <button type="submit" className={style.submit}>
