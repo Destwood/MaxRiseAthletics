@@ -74,20 +74,22 @@ function CardList() {
       <div className={style.slider}>
         {cards[currentIndex]}
         <div className={style.sliderControl}>
-          <button
-            onClick={handlePrev}
-            disabled={currentIndex === 0}
-            className={style.sliderBtn}
-          >
-            &lt;
-          </button>
-          <button
-            onClick={handleNext}
-            disabled={currentIndex === cards.length - 1}
-            className={style.sliderBtn}
-          >
-            &gt;
-          </button>
+          <div className={style.control}>
+            <button
+              onClick={handlePrev}
+              disabled={currentIndex === 0}
+              className={style.sliderBtn}
+            >
+              &lt;
+            </button>
+            <button
+              onClick={handleNext}
+              disabled={currentIndex === cards.length - 1}
+              className={style.sliderBtn}
+            >
+              &gt;
+            </button>
+          </div>
         </div>
 
         {/* <p>

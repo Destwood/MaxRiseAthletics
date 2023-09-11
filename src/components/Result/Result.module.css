@@ -30,29 +30,35 @@
 } */
 
 .sliderControl {
-  width: 100%;
-  top: 40%;
   position: absolute;
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem;
+  width: 100%;
+  top: 1.3rem;
+  padding: 0.7rem 2rem;
+}
+.control {
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
 }
 .sliderBtn {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
+  width: 4rem;
+  height: 24rem;
   border: none;
   padding: 0.1rem;
-  background-color: #000000e0;
+  background-color: #00000000;
   color: #fff;
   font-size: 1.5rem;
   font-weight: 700;
-  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+  /* box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.413); */
 }
-
 .sliderBtn:disabled {
-  background-color: #00000051;
+  /* background-color: #00000051; */
   box-shadow: none;
+
+  color: #ffffff3a;
 }
 
 @media (max-width: 1440px) {

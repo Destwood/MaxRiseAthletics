@@ -37,6 +37,7 @@ function Contact() {
               <input
                 type="tel"
                 name="phone"
+                pattern="[0-9]*"
                 placeholder="Телефон"
                 className={`${style.phone} + ${style.input}`}
                 required
