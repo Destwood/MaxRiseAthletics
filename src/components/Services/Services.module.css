@@ -1,14 +1,30 @@
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-around;
+.servicesWrapper {
+  padding: 5rem 2rem 5rem 2rem;
+  background-size: cover;
+}
+
+.servicesTitle {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
   margin-bottom: 4rem;
 }
 
-.newCard {
-  background-color: red;
+.services {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
-@media (max-width: 1180px) {
+.price {
+  position: absolute;
+  font-size: 1.2rem;
+  margin-left: 75%;
+  padding: 1rem 2.5rem;
+  width: fit-content;
+  background-color: #ff8026;
+  color: #fff;
+  letter-spacing: 1px;
 }
