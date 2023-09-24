@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Contact.module.css";
 
 function Contact() {
+  const [phone, setPhone] = useState(""); // Початкове значення пустого номеру
+
+  const formatPhoneNumber = (input) => {
+    // Забираємо всі символи, крім цифр
+    const cleaned = input.replace(/\D/g, "");
+
+    // Встановлюємо максимальну довжину номера
+    const maxLength = 10;
+    let formattedValue = cleaned.substring(0, maxLength);
+
+    // Форматуємо номер за потрібним шаблоном
+    if (formattedValue.length >= 1) {
+      formattedValue = `+38(${formattedValue.slice(
+        1,
+        4
+      )})${formattedValue.slice(4, 7)}-${formattedValue.slice(
+        7,
+        9
+      )}-${formattedValue.slice(9)}`;
+    }
+    return formattedValue;
+  };
+
+  const handlePhoneChange = (event) => {
+    const inputValue = event.target.value;
+    const formattedValue = formatPhoneNumber(inputValue);
+    setPhone(formattedValue);
+  };
+
   return (
     <div className={style.contactWrapper} id="order">
       <div className={style.contactContent}>
@@ -35,11 +64,12 @@ function Contact() {
                 required
               />
               <input
-                type="tel"
+                type="text"
                 name="phone"
-                pattern="[0-9]*"
                 placeholder="Телефон"
                 className={`${style.phone} + ${style.input}`}
+                value={phone}
+                onChange={handlePhoneChange}
                 required
               />
             </div>
