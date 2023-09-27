@@ -1,7 +1,52 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import style from "./Popup.module.css";
+let number = "";
 
 function Popup({ showPopup, setShowPopup }) {
+  const [phone, setPhone] = useState("+38 (___) ___-__-__");
+  const [changed, setChanged] = useState("");
+  const mask = "+38 (___) ___-__-__";
+
+  useEffect(() => {
+    setPhone(changed);
+  }, [changed]);
+
+  function handlePhoneChange(event) {
+    if (number.length <= 9) {
+      const str = event.target.value.replace(/\D/g, "");
+      const lastChar = str[str.length - 1];
+      number = number + lastChar;
+      number = number.replace(/\D/g, "");
+
+      processMaskedValue(number);
+    }
+  }
+
+  function handleKeyDown(event) {
+    if (event.key === "Backspace") {
+      event.preventDefault();
+      if (number.length > 0) {
+        number = number.slice(0, -1);
+        processMaskedValue(number);
+      }
+    }
+  }
+
+  function processMaskedValue(inputValue) {
+    let maskedArray = mask.split("");
+    let num = inputValue.split("");
+
+    let counter = 0;
+    for (let i = 0; i < maskedArray.length; i++) {
+      if (maskedArray[i] === "_" && num[counter]) {
+        maskedArray[i] = num[counter];
+        counter++;
+      }
+    }
+    maskedArray = maskedArray.join("");
+    setChanged(maskedArray);
+  }
+
   return (
     <div
       className={`${style.popupWrapper} ${showPopup ? "" : style.hide}`}
@@ -50,9 +95,12 @@ function Popup({ showPopup, setShowPopup }) {
             <input
               type="tel"
               name="phone"
-              placeholder="Телефон"
+              placeholder="+38 (___) ___-__-__"
               className={`${style.phone} + ${style.input}`}
               required
+              value={phone}
+              onChange={handlePhoneChange}
+              onKeyDown={handleKeyDown}
             />
           </div>
           <textarea

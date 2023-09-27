@@ -19,6 +19,14 @@
   font-size: 3rem;
   width: fit-content;
   margin: 3rem auto 3rem;
+  transition: transform 1s, opacity 1s; /* Виправлено властивість "position" на "transform" */
+  opacity: 0;
+  transform: translateY(50px); /* Виправлено "translate" на "translateY" */
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .sideTitle {
@@ -27,6 +35,22 @@
 
 .blockTitle {
   color: #000;
+}
+
+.leftContainer {
+  opacity: 0;
+  transform: translateX(-500px);
+}
+
+.rightContainer {
+  opacity: 0;
+  transform: translateX(500px);
+}
+
+.container {
+  transition: transform 1s, opacity 1s;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* popup */

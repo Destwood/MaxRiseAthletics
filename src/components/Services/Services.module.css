@@ -11,15 +11,34 @@
 }
 
 .services {
+  position: relative;
+  background-color: #ff8026;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  padding: 2rem 0 0 0;
+}
+
+.services > div:nth-child(2)::after,
+.services > div:nth-child(3)::after,
+.services > div:nth-child(4)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 70%;
+  width: 1px;
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  background-color: #ffffff7c;
+  margin-top: 1rem;
 }
 
 .price {
-  position: absolute;
   font-size: 1.2rem;
   margin-left: 75%;
   padding: 1rem 2.5rem;
@@ -27,4 +46,23 @@
   background-color: #ff8026;
   color: #fff;
   letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .services > div:nth-child(2)::after,
+  .services > div:nth-child(3)::after,
+  .services > div:nth-child(4)::after {
+    all: unset;
+  }
+
+  .services > div:nth-child(1),
+  .services > div:nth-child(2),
+  .services > div:nth-child(3) {
+    all: unset;
+    border-bottom: 2px solid #fff;
+  }
+
+  .price {
+    margin: 0;
+  }
 }
