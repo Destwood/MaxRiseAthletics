@@ -5,14 +5,14 @@
 
 .servicesTitle {
   text-align: center;
-  color: #fff;
+  color: #c8c8c8;
   font-size: 3rem;
   margin-bottom: 4rem;
 }
 
 .services {
   position: relative;
-  background-color: #ff8026;
+  /* background-color: #92838324; */
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -29,21 +29,22 @@
   position: absolute;
   height: 70%;
   width: 1px;
+  /* border-right: 2px solid #fff; */
 }
 
 .line {
-  width: 90%;
-  height: 1px;
-  background-color: #ffffff7c;
+  width: 80%;
+  height: 2px;
+  background-color: #ffffff;
   margin-top: 1rem;
 }
 
 .price {
-  font-size: 1.2rem;
-  margin-left: 75%;
-  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  margin-left: 0%;
+  padding: 1rem 2.5rem 2rem;
   width: fit-content;
-  background-color: #ff8026;
+  background-color: #ff6a0000;
   color: #fff;
   letter-spacing: 1px;
 }
@@ -59,7 +60,6 @@
   .services > div:nth-child(2),
   .services > div:nth-child(3) {
     all: unset;
-    border-bottom: 2px solid #fff;
   }
 
   .price {

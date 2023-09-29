@@ -19,9 +19,7 @@
   font-size: 3rem;
   width: fit-content;
   margin: 3rem auto 3rem;
-  transition: transform 1s, opacity 1s; /* Виправлено властивість "position" на "transform" */
-  opacity: 0;
-  transform: translateY(50px); /* Виправлено "translate" на "translateY" */
+  opacity: 1;
 }
 
 .visible {
@@ -38,13 +36,11 @@
 }
 
 .leftContainer {
-  opacity: 0;
-  transform: translateX(-500px);
+  opacity: 1;
 }
 
 .rightContainer {
-  opacity: 0;
-  transform: translateX(500px);
+  opacity: 1;
 }
 
 .container {
