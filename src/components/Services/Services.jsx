@@ -44,9 +44,10 @@ function Services() {
             "Постійний контроль, звітність по харчуванню та тренуваннях, зв’язок з нашою командою, підтримка."
           }
         />
-
-        <div className={style.line} />
-        <div className={style.price}>Ціна - 2990 грн/міс</div>
+        <div className="">
+          <div className={style.line} />
+          <div className={style.price}>Ціна - 2990 грн/міс</div>
+        </div>
       </div>
     </div>
   );

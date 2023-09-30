@@ -39,6 +39,7 @@ header {
 
 /* links */
 .links {
+  text-wrap: nowrap;
   margin-left: 15%;
   display: flex;
   font-size: 1.2rem;

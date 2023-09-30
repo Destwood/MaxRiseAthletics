@@ -1,4 +1,5 @@
 .popupWrapper {
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.446);
   display: flex;
   justify-content: center;

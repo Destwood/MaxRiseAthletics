@@ -33,7 +33,7 @@
 }
 
 .line {
-  width: 80%;
+  width: 80vw;
   height: 2px;
   background-color: #ffffff;
   margin-top: 1rem;
@@ -41,7 +41,7 @@
 
 .price {
   font-size: 1.5rem;
-  margin-left: 0%;
+  margin: auto;
   padding: 1rem 2.5rem 2rem;
   width: fit-content;
   background-color: #ff6a0000;
@@ -53,13 +53,11 @@
   .services > div:nth-child(2)::after,
   .services > div:nth-child(3)::after,
   .services > div:nth-child(4)::after {
-    all: unset;
   }
 
   .services > div:nth-child(1),
   .services > div:nth-child(2),
   .services > div:nth-child(3) {
-    all: unset;
   }
 
   .price {

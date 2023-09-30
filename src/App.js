@@ -11,19 +11,21 @@ import "./App.css";
 import Header from "./components/Header/Header";
 
 function App() {
-  const [showPopup, setShowPopup] = useState(false); // show popup
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setShowPopup(true);
     }, 2000);
-
-    if (showPopup) {
-      document.body.classList.add("disableScroll");
-    } else {
-      document.body.classList.remove("disableScroll");
-    }
   }, []);
+
+  useEffect(() => {
+    if (showPopup) {
+      document.documentElement.classList.add("htmlOverflowHidden");
+    } else {
+      document.documentElement.classList.remove("htmlOverflowHidden");
+    }
+  }, [showPopup]);
 
   return (
     <div className="App">

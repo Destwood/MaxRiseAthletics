@@ -6,6 +6,7 @@
 }
 
 .card {
+  min-width: 300px;
   height: 23rem;
   padding: 2rem;
   background-color: #ff7f26;
@@ -20,11 +21,13 @@
 }
 
 .title {
+  height: 1.5rem;
   font-size: 1.5rem;
   margin-top: 1.3rem;
 }
 
 .text {
+  height: 40%;
   font-size: 1rem;
   margin-top: 1rem;
   font-style: italic;
@@ -41,10 +44,13 @@
   width: 3rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1320px) {
   .cardWrapper {
     flex-basis: 48%;
   }
+}
+
+@media (max-width: 1024px) {
   .card {
     height: 20rem;
   }
@@ -54,10 +60,11 @@
 }
 @media (max-width: 768px) {
   .cardWrapper {
-    flex-basis: 100%;
+    flex-basis: 45%;
   }
   .card {
-    height: fit-content;
+    width: 300px;
+    height: 100%;
   }
   .text {
     height: fit-content;

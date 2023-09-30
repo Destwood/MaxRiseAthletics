@@ -10,6 +10,7 @@
 html {
   width: 100%;
   max-width: 100%;
+
   overflow-x: hidden;
 }
 body {
@@ -58,4 +59,7 @@ body {
   .servicesContainer {
     padding: 2rem;
   }
+}
+.htmlOverflowHidden {
+  overflow: hidden;
 }
