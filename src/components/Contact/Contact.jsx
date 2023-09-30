@@ -15,11 +15,12 @@ function Contact() {
     if (number.length <= 9) {
       const str = event.target.value.replace(/\D/g, "");
       const lastChar = str[str.length - 1];
-      number = number + lastChar;
-      number = number.replace(/\D/g, "");
-      console.log(number);
 
-      processMaskedValue(number);
+      if (!isNaN(event.target.value[event.target.value.length - 1])) {
+        number = number + lastChar;
+        number = number.replace(/\D/g, "");
+        processMaskedValue(number);
+      }
     }
   }
 
