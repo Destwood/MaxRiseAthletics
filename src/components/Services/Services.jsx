@@ -12,8 +12,8 @@ function Services() {
     <div
       className={style.servicesWrapper}
       style={{ backgroundImage: `url(${bgItem})` }}
-      id="services"
     >
+      <div className={style.id} id="services"></div>
       <h3 className={style.servicesTitle}>Послуги</h3>
       <div className={style.services}>
         <Card
@@ -41,7 +41,7 @@ function Services() {
           img={clock}
           titleText={"Контроль"}
           text={
-            "Постійний контроль, звітність по харчуванню та тренуваннях, зв’язок з нашою командою, підтримка."
+            "Постійний контроль, звітність по харчуванню та тренуваннях, зв’язок з нашою командою, підтримка в досягнені результату."
           }
         />
         <div className="">

@@ -50,7 +50,8 @@ function Contact() {
   }
 
   return (
-    <div className={style.contactWrapper} id="order">
+    <div className={style.contactWrapper}>
+      <div className={style.id} id="order"></div>
       <div className={style.contactContent}>
         <h3 className={style.contactTitle}>Замовити</h3>
         <form

@@ -8,20 +8,20 @@ import star from "../../assets/star.svg";
 
 function Header() {
   const [isMenuActive, SetIsMenuActive] = useState(false);
-  const [isBurgerChached, SetisBurgerChached] = useState(false);
+  const [isBurgerChacked, SetisBurgerChacked] = useState(false);
 
   const handleBurgerChange = (event) => {
-    SetisBurgerChached(event.target.checked);
+    SetisBurgerChacked(event.target.checked);
   };
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 1024 && isBurgerChached) {
+      if (window.innerWidth <= 1024 && isBurgerChacked) {
         SetIsMenuActive(true);
       } else {
         SetIsMenuActive(false);
       }
-
+      // popup delay
       // popup delay
     };
 
@@ -31,7 +31,7 @@ function Header() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [isBurgerChached]);
+  }, [isBurgerChacked]);
 
   return (
     <header>
@@ -73,7 +73,7 @@ function Header() {
             type="checkbox"
             id="burger"
             onChange={handleBurgerChange}
-            checked={isBurgerChached}
+            checked={isBurgerChacked}
           />
           <span></span>
           <span></span>
@@ -87,7 +87,7 @@ function Header() {
           href="#about"
           className={style.dropdownLink}
           onClick={() => {
-            SetisBurgerChached(false);
+            SetisBurgerChacked(false);
             SetIsMenuActive(false);
           }}
         >
@@ -97,7 +97,7 @@ function Header() {
           href="#results"
           className={style.dropdownLink}
           onClick={() => {
-            SetisBurgerChached(false);
+            SetisBurgerChacked(false);
             SetIsMenuActive(false);
           }}
         >
@@ -107,7 +107,7 @@ function Header() {
           href="#services"
           className={style.dropdownLink}
           onClick={() => {
-            SetisBurgerChached(false);
+            SetisBurgerChacked(false);
             SetIsMenuActive(false);
           }}
         >
@@ -117,7 +117,7 @@ function Header() {
           href="#order"
           className={style.dropdownLink}
           onClick={() => {
-            SetisBurgerChached(false);
+            SetisBurgerChacked(false);
             SetIsMenuActive(false);
           }}
         >
@@ -150,7 +150,7 @@ function Header() {
             href="#order"
             className={style.button}
             onClick={() => {
-              SetisBurgerChached(false);
+              SetisBurgerChacked(false);
               SetIsMenuActive(false);
             }}
           >
