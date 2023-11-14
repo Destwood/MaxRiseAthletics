@@ -1,4 +1,5 @@
 .popupWrapper {
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.446);
   display: flex;
   justify-content: center;
@@ -6,7 +7,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 15;
   top: 0;
   left: 0;
 }
@@ -14,8 +15,7 @@
 /* content */
 
 .popupContent {
-  width: 25vw;
-  height: 80vh;
+  position: relative;
   background-color: #ff7f26;
   border-radius: 50px;
   padding: 3rem;
@@ -29,24 +29,32 @@
 .title {
   font-size: 3rem;
   color: #fff;
+  margin-bottom: 1.5rem;
 }
 
 .form {
-  height: 80%;
+  width: 100%;
 }
 
 .input {
+  margin: auto;
+  width: 15rem;
   display: block;
   margin-bottom: 2rem;
   background-color: #00000026;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 6px;
+  color: #fff;
 }
 
 .input::placeholder {
-  color: #ffffff37;
+  color: #ffffff91;
   letter-spacing: 3px;
+}
+
+.input:focus {
+  caret-color: #fff;
 }
 
 .input:focus::placeholder {
@@ -64,21 +72,62 @@
 
 .submit {
   width: 100%;
-  height: 5vh;
+  height: 7vh;
   border-radius: 20px;
   border: none;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
   letter-spacing: 1px;
+  color: #000;
+  background-color: #fff;
 }
 
 .submit:hover {
   cursor: pointer;
-  border: 2px solid #000;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #fff;
+  box-sizing: border-box;
 }
 
 /*  */
 .hide {
   display: none;
 }
+
+.close {
+  position: absolute;
+  top: 1.3rem;
+  right: 1.7rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  user-select: none;
+}
+.close:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .input {
+    width: 80%;
+  }
+  .popupContent {
+    width: 40%;
+    min-width: 21rem;
+    height: 37rem;
+  }
+  .close {
+    top: 1.5rem;
+    right: 1.9rem;
+    font-weight: normal;
+    font-size: 1.3rem;
+  }
+}
+/* @media (max-width: 320px) {
+  .popupContent {
+    width: 100%;
+    height: 100%;
+  }
+} */

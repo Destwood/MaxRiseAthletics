@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
-
+:root {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,7 @@
 html {
   width: 100%;
   max-width: 100%;
+
   overflow-x: hidden;
 }
 body {
@@ -23,53 +26,30 @@ a {
   text-decoration: none;
 }
 
-input {
+textarea {
   all: unset;
 }
-/*  */
 
-header {
-  position: fixed;
-  background-color: #fff;
-}
-
-/* containers */
-
-.container {
-  padding: 5rem;
-  background-size: cover;
-}
-
-.sideContainer {
-  background-color: #000;
-}
-.cardsContainer {
-}
-
-.servicesContainer {
-}
-.contactContainer {
-  background-color: #ff7f26;
-}
-
-/* sideContainer */
-
-.title {
-  font-size: 3rem;
-  width: fit-content;
-  margin: 0 auto 3rem;
-}
-
-.sideTitle {
-  color: #fff;
-}
-
-.blockTitle {
-  color: #000;
+input {
+  all: unset;
 }
 
 /* popup */
 
-body {
-  overflow-y: hidden;
+@media (max-width: 768px) {
+  .sideContainer {
+    padding: 2rem;
+  }
+  .contactContainer {
+    padding: 2rem 0;
+    background-color: inherit;
+  }
+}
+@media (max-width: 320px) {
+  .servicesContainer {
+    padding: 2rem;
+  }
+}
+.htmlOverflowHidden {
+  overflow: hidden;
 }

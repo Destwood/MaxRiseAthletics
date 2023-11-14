@@ -1,14 +1,70 @@
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-around;
+.servicesWrapper {
+  padding: 0rem 2rem 5rem 2rem;
+  background-size: cover;
+}
+
+.id {
+  padding-bottom: 5rem;
+}
+
+.servicesTitle {
+  text-align: center;
+  color: #c8c8c8;
+  font-size: 3rem;
   margin-bottom: 4rem;
 }
 
-.newCard {
-  background-color: red;
+.services {
+  position: relative;
+  /* background-color: #92838324; */
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem 0 0 0;
 }
 
-@media (max-width: 1180px) {
+.services > div:nth-child(2)::after,
+.services > div:nth-child(3)::after,
+.services > div:nth-child(4)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 70%;
+  width: 1px;
+  /* border-right: 2px solid #fff; */
+}
+
+.line {
+  width: 80vw;
+  height: 2px;
+  background-color: #ffffff;
+  margin-top: 1rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  margin: auto;
+  padding: 1rem 2.5rem 2rem;
+  width: fit-content;
+  background-color: #ff6a0000;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .services > div:nth-child(2)::after,
+  .services > div:nth-child(3)::after,
+  .services > div:nth-child(4)::after {
+  }
+
+  .services > div:nth-child(1),
+  .services > div:nth-child(2),
+  .services > div:nth-child(3) {
+  }
+
+  .price {
+    margin: 0;
+  }
 }

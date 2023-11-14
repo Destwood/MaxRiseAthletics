@@ -1,17 +1,19 @@
 /* header */
 header {
   width: 100%;
-  margin-bottom: 0.1rem;
+  position: fixed;
   display: flex;
-  align-items: center;
+  border-bottom: 1px solid #00000050;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .headerContainer {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 5rem;
   font-weight: 700;
 }
 
@@ -22,23 +24,13 @@ header {
   user-select: none;
 }
 
-.logoIcon {
-  height: 2.5rem;
-  width: 2.5rem;
-  background-color: #ff7f26;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  font-size: 1.5rem;
-  padding: 0.2rem;
-  user-select: none;
-  color: #fff;
+.logoImg {
+  height: 3rem;
 }
 
 .logoName {
   font-size: 1.5rem;
-  margin: 0 2rem;
+  margin: 0 0.5rem;
   display: flex;
   align-items: center;
 }
@@ -47,18 +39,30 @@ header {
 
 /* links */
 .links {
+  text-wrap: nowrap;
+  margin-left: 15%;
   display: flex;
   font-size: 1.2rem;
-  align-items: center;
 }
 
 .linksItem {
-  margin: 0 3rem;
+  padding-left: 2rem;
+  margin-right: 2rem;
+}
+
+.space::after {
+  background-color: #0000009c;
+  width: 1px;
+  height: 1.5rem;
+  content: "";
+  position: absolute;
+  display: inline-block;
+  margin-left: 2rem;
 }
 
 .link:hover {
   color: #ff7f26;
-  /* transition: 0.5s; */
+  transition: 0.2s;
 }
 /* end links */
 
@@ -70,6 +74,7 @@ header {
   height: 30px;
   background: transparent;
   cursor: pointer;
+  transform: scale(0.6);
 }
 
 .burger input {
@@ -136,29 +141,50 @@ header {
 }
 
 .dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 75vh;
-  background-color: white;
+  height: 100%;
+  position: fixed;
+  top: 4rem;
+  background-color: #fff;
 }
 
 .dropdownLink {
-  display: block;
-  border-bottom: 2px solid #000;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+.socialLinks {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  font-size: 4rem;
-
-  height: 25vh;
+  justify-content: space-between;
+  width: 6rem;
+  margin: 2rem auto;
+}
+.linkLogo {
+  height: 2rem;
 }
 
+.button {
+  background-color: #fff;
+  width: 13rem;
+  border: 1px solid #000000bc;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.3rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #000;
+}
 /* media */
 
 @media (max-width: 1024px) {
   header {
-    height: 25vh;
+    height: 4rem;
     margin: 0;
+    box-sizing: border-box;
   }
   .headerContainer {
     justify-content: space-around;
@@ -167,6 +193,7 @@ header {
   .span {
     display: none;
   }
+
   /* menu */
   .links {
     display: none;
@@ -176,3 +203,18 @@ header {
     display: block;
   }
 }
+
+@media (max-width: 768px) {
+  .logoName {
+    display: none;
+  }
+  .headerContainer {
+    padding: 0 2rem;
+    justify-content: space-between;
+  }
+}
+/* @media (max-width: 420px) {
+  .logoName {
+    font-size: 1rem;
+  }
+} */

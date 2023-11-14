@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.wrapper {
+  padding: 0rem 0 2rem;
+}
+
+.id {
+  padding-bottom: 5rem;
+}
+
+.title {
+  width: 80%;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0 0 2rem 0;
+  border-bottom: 1px solid #000;
+  margin: 0 auto 5rem;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* slider area */
+
+.slider {
+  overflow: hidden;
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.sliderContent {
+  position: relative;
+  display: flex;
+  transition: right 0.2s;
+}
+
+.imgContainer {
+  min-width: 30vw;
+  max-height: 35vw;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.img {
+  height: fit-content;
+  height: 100%;
+}
+
+/*  */
+
+.button {
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+  p {
+    color: #000;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+  }
+}
+.right {
+  &:hover {
+    animation: slide-to-right 0.3s;
+  }
+}
+.left {
+  &:hover {
+    animation: slide-to-left 0.3s;
+  }
+}
+.adaptiveControl {
+  display: none;
+  width: 100%;
+  .button {
+    width: 50%;
+    text-align: center;
+    p {
+      margin: auto;
+    }
+  }
+}
+@keyframes slide-to-right {
+  0% {
+    right: 0px;
+    opacity: 0;
+  }
+
+  100% {
+    right: 10px;
+    opacity: 1;
+  }
+}
+@keyframes slide-to-left {
+  0% {
+    left: 0px;
+    opacity: 0;
+  }
+
+  100% {
+    left: 10px;
+    opacity: 1;
+  }
+}
+@keyframes opacity-animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width: 1440px) {
+  .result {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0;
+  }
+  .result {
+    width: 90%;
+  }
+  .container {
+    .button {
+      display: none;
+    }
+  }
+  .imgContainer {
+    min-width: 50vw;
+    max-height: 30rem;
+  }
+  .adaptiveControl {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .slider {
+    position: relative;
+    display: block;
+    padding: 2rem 0 0 0;
+  }
+  .imgContainer {
+    min-width: 100vw;
+    min-height: 40rem;
+    max-height: 40rem;
+  }
+  .result {
+    display: none;
+  }
+}
