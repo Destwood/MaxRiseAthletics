@@ -2,7 +2,7 @@
 
 .wrapper {
   padding: 0 5rem 4rem;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .id {
@@ -13,14 +13,23 @@
 }
 
 .sectionTitle {
+  position: relative;
   width: 70%;
-  color: #fff;
   font-size: 3rem;
   line-height: 3rem;
   text-align: center;
   padding-bottom: 2rem;
   margin: 0 auto 3rem;
   border-bottom: 1px solid #fff;
+  &::after {
+    margin-top: 1rem;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+  }
 }
 .container {
   position: relative;
@@ -33,7 +42,6 @@
   aspect-ratio: 1/1;
   display: flex;
   align-items: center;
-  color: #fff;
   /* border: 1px solid #ffffff; */
   text-align: center;
   overflow: hidden;
@@ -65,7 +73,6 @@
   display: block;
   height: 100%;
   width: 100%;
-  background-color: red;
 }
 .content {
   height: 70%;
@@ -76,7 +83,7 @@
 }
 
 .desc {
-  color: rgba(255, 255, 255, 0.853);
+  color: #000;
   font-size: 1.1rem;
   max-width: 80%;
 }

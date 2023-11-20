@@ -1,0 +1,162 @@
+.wrapper {
+  height: 70vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    30deg,
+    rgb(23, 23, 23) 0%,
+    rgba(49, 49, 49, 1) 40%,
+    rgba(0, 0, 0, 1) 65%
+  );
+  padding-top: 5rem;
+  margin-bottom: 15rem;
+}
+
+.container {
+  display: flex;
+  height: 90vh;
+  width: 70%;
+  margin: auto;
+}
+
+.img {
+  height: 100%;
+  background-color: #ff7f27;
+}
+.сalculator {
+  background-color: #fff;
+  width: 50%;
+  height: fit-content;
+  margin-top: 0.5rem;
+  padding: 2rem 1.1rem 0;
+  h2 {
+    color: #000;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 3rem;
+  }
+}
+
+.desc {
+  color: #000000c0;
+  margin-bottom: 1rem;
+}
+// logic
+.logic {
+  display: flex;
+  gap: 2rem;
+  & > div {
+    width: 50%;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  button {
+    width: 49%;
+    transition: 0.1s all;
+  }
+}
+
+.female {
+  background-color: transparent;
+  border: 1px solid #000;
+  padding: 1rem 2rem;
+  &:hover {
+    color: #fff;
+    background-color: #ff7f27;
+    border: 1px solid #00000000;
+  }
+}
+
+.male {
+  background-color: #ff7f27;
+  border: none;
+  padding: 1rem 2rem;
+  color: #fff;
+  &:hover {
+    border: 1px solid #ff7f27;
+    background-color: transparent;
+    color: #ff7f27;
+  }
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #00000052;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  &::placeholder {
+    transition: 0.2s color;
+  }
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+.select {
+  width: 100%;
+  border: 1px solid #ffffff52;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 0;
+  option {
+    border-radius: 0;
+  }
+}
+
+.calculate {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 1rem 2rem;
+  &:hover {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+  }
+}
+//
+.resultContainer {
+  height: fit-content;
+}
+.result {
+  aspect-ratio: 1/1;
+  color: #fff;
+  width: 100%;
+  background: rgb(32, 32, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(32, 32, 32, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  padding: 2rem;
+  h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    span {
+      font-size: 1.5rem;
+    }
+  }
+  .desc {
+    color: #ffffffe7;
+  }
+  margin-bottom: 1rem;
+}
+
+.details {
+  height: 50%;
+  max-height: 12rem;
+  overflow-y: auto;
+}

@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import style from "./About.module.scss";
 
 import sideText1 from "../../assets/sideText1.png";
 import sideText2 from "../../assets/test.jpg";
 import sideText3 from "../../assets/sideText3.PNG";
-import timer from "../../assets/timer.svg";
-import running from "../../assets/running.svg";
+import clock from "../../assets/clock.svg";
+import running from "../../assets/clock.svg";
 import weight from "../../assets/weight.svg";
 
 function About() {
@@ -26,7 +26,7 @@ function About() {
         </div>
         <div>
           <div className={style.content}>
-            <img className={style.icon} src={timer} alt="" />
+            <img className={style.icon} src={clock} alt="" />
             <h3>Швидше</h3>
             <p className={style.desc}>{text[0]}</p>
           </div>

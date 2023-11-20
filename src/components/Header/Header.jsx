@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
-import style from "./Header.module.css";
+import style from "./Header.module.scss";
 
 import logo from "../../assets/logo.png";
 import telegram from "../../assets/telegram.svg";
 import instagram from "../../assets/instagram.svg";
+import phone from "../../assets/phone.svg";
+import mail from "../../assets/mail.svg";
 import star from "../../assets/star.svg";
+import logo2 from "../../assets/logoTemp.png";
 
 function Header() {
   const [isMenuActive, SetIsMenuActive] = useState(false);
@@ -39,30 +42,70 @@ function Header() {
         {/* logo */}
         <a href="/" className={style.logo}>
           <img className={style.logoImg} src={logo} alt=""></img>
-          <p className={style.logoName}>MaxRise-Athletics</p>
+          <img className={style.logo2} src={logo2} alt=""></img>
         </a>
         {/* logo */}
 
         {/* menu */}
         <ul className={style.links}>
-          <li className={`${style.linksItem} ${style.space}`}>
-            <a href="#about" className={style.link}>
+          <li className={`${style.linksItem}`}>
+            <a href="#about" className={style.main}>
+              Головна
+            </a>
+          </li>
+          <li className={`${style.linksItem}`}>
+            <a href="#results" className={style.link}>
               Про нас
             </a>
           </li>
-          <li className={`${style.linksItem} ${style.space}`}>
-            <a href="#results" className={style.link}>
-              Результати
+          <li className={`${style.linksItem}`}>
+            <a href="#services" className={style.link}>
+              Досвід
             </a>
           </li>
-          <li className={`${style.linksItem} ${style.space}`}>
-            <a href="#services" className={style.link}>
+          <li className={style.linksItem}>
+            <a href="#order" className={style.link}>
               Послуги
             </a>
           </li>
           <li className={style.linksItem}>
             <a href="#order" className={style.link}>
+              Калькулятор
+            </a>
+          </li>
+          <li className={`${style.linksItem} ${style.space}`}>
+            <a href="#order" className={style.link}>
               Замовити
+            </a>
+          </li>
+          <li className={`${style.linksItem} ${style.social}`}>
+            <a
+              href="https://instagram.com/maxrise_athletics?igshid=MzRlODBiNWFlZA=="
+              className={style.link}
+              target="blank"
+            >
+              <img src={instagram} alt="inst" className={style.linkLogo} />
+            </a>
+            <a
+              href="https://t.me/MaxRise_Athletics"
+              className={style.link}
+              target="blank"
+            >
+              <img src={telegram} alt="telegram" className={style.linkLogo} />
+            </a>
+            <a
+              href="https://instagram.com/maxrise_athletics?igshid=MzRlODBiNWFlZA=="
+              className={style.link}
+              target="blank"
+            >
+              <img src={phone} alt="inst" className={style.linkLogo} />
+            </a>
+            <a
+              href="https://t.me/MaxRise_Athletics"
+              className={style.link}
+              target="blank"
+            >
+              <img src={mail} alt="telegram" className={style.linkLogo} />
             </a>
           </li>
         </ul>

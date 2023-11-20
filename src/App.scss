@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
 :root {
   scroll-behavior: smooth;
 }
@@ -14,7 +14,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 ul {
@@ -34,6 +34,15 @@ input {
   all: unset;
 }
 
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+main {
+  padding-top: 4rem;
+}
 /* popup */
 
 @media (max-width: 768px) {

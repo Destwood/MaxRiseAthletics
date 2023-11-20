@@ -1,52 +1,78 @@
 import React from "react";
-import Card from "./Card/Card";
-import style from "./Services.module.css";
+import style from "./Services.module.scss";
 
-import gym from "../../assets/gym.svg";
-import phone from "../../assets/phone.svg";
-import food from "../../assets/food.svg";
-import clock from "../../assets/clock.svg";
-import bgItem from "../../assets/GymBg.jpg";
+import meal from "../../assets/meal.svg";
+import timer from "../../assets/timer2.svg";
+import plan from "../../assets/plan.svg";
+import fitness from "../../assets/fitness.svg";
+import cardio from "../../assets/cardio.svg";
+import weight from "../../assets/dumbell.svg";
+
 function Services() {
   return (
-    <div
-      className={style.servicesWrapper}
-      style={{ backgroundImage: `url(${bgItem})` }}
-    >
-      <div className={style.id} id="services"></div>
-      <h3 className={style.servicesTitle}>Послуги</h3>
-      <div className={style.services}>
-        <Card
-          img={gym}
-          titleText={"Тренування"}
-          text={
-            "Розбір вправ та їх корегування, щотижневий звіт, підбираємо розклад тренувань з урахуванням ваших потреб і рівня фізичної підготовки."
-          }
-        />
-        <Card
-          img={phone}
-          titleText={"Консультації"}
-          text={
-            "Безкоштовна консультація, за якою ми визначимо, що потрібно для досягнення вашої цілі."
-          }
-        />
-        <Card
-          img={food}
-          titleText={"Харчування"}
-          text={
-            "Складання плану харчування за визначений бюджет, щотижневий звіт, корегування плану в залежності від результату."
-          }
-        />
-        <Card
-          img={clock}
-          titleText={"Контроль"}
-          text={
-            "Постійний контроль, звітність по харчуванню та тренуваннях, зв’язок з нашою командою, підтримка в досягнені результату."
-          }
-        />
-        <div className="">
-          <div className={style.line} />
-          <div className={style.price}>Ціна - 2990 грн/міс</div>
+    <div className={style.wrapper}>
+      <div className={style.container}>
+        <div className={style.main}>
+          <div className={style.top}>
+            <p className={style.slogan}>Створіть тіло своєї мрії</p>
+            <h3>Прогрессуй</h3>
+          </div>
+          <div className={style.middle}>100$</div>
+          <div className={style.bottom}>
+            <p>
+              Стань <span>учасником</span>
+            </p>
+            <button>Замовити зараз</button>
+          </div>
+        </div>
+        <div className={style.details}>
+          <div className={style.grid}>
+            <div className={style.gridItem}>
+              <img className={style.icon} src={meal} alt="" />
+              <div className="">
+                <h4>Харчування</h4>
+                <p>Різноманітні та здорові страви для смачного харчування</p>
+              </div>
+            </div>
+            <div className={style.gridItem}>
+              <img className={style.icon} src={plan} alt="" />
+              <div className="">
+                <h4>План</h4>
+                <p>
+                  Персональний графік, створений під твої цілі та можливості
+                </p>
+              </div>
+            </div>
+            <div className={style.gridItem}>
+              <img className={style.icon} src={cardio} alt="" />
+              <div className="">
+                <h4>Кардіо</h4>
+                <p>Ефективні вправи для здоров'я серця та енергії</p>
+              </div>
+            </div>
+            <div className={style.gridItem}>
+              <img className={style.icon} src={timer} alt="" />
+              <div className="">
+                <h4>Ефективність</h4>
+                <p>Контроль часу та оптимізація занять</p>
+              </div>
+            </div>
+
+            <div className={style.gridItem}>
+              <img className={style.icon} src={weight} alt="" />
+              <div className="">
+                <h4>Сила</h4>
+                <p>Тренування для досягнення нових результатів</p>
+              </div>
+            </div>
+            <div className={style.gridItem}>
+              <img className={style.icon} src={fitness} alt="" />
+              <div className="">
+                <h4>Фігура</h4>
+                <p>Створення омрієної фігури</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

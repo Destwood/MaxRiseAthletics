@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import style from "./Popup.module.css";
+import style from "./Popup.module.scss";
 let number = "";
 
 function Popup({ showPopup, setShowPopup }) {
