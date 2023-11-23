@@ -14,7 +14,7 @@ function Hero() {
 
         <div className={style.content}>
           <h1>
-            <span>Персональний тренер</span> це <span>запорука успіху</span>
+            <span>Персональний </span>тренер це запорука<span> успіху</span>
           </h1>
           <div className={style.decs}>
             MaxRise - це про здоров’я, тож результат гарантовано отримують всі.

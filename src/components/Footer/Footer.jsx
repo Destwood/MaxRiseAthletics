@@ -210,7 +210,7 @@ function Footer() {
               <img src={mail} className={style.footerLogo} alt="" />
             </a>
           </div>
-          <p>MaxRise ©. All rights reserved.</p>
+          <p>© 2023 MaxRise-Athletics. All rights reserved.</p>
         </div>
       </div>
     </footer>

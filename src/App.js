@@ -9,6 +9,7 @@ import Experience from "./components/Experience/Experience";
 import "./App.scss";
 
 import Header from "./components/Header/Header";
+import UpButton from "./components/UpButton/UpButton";
 
 function App() {
   // const [showPopup, setShowPopup] = useState(false);
@@ -40,7 +41,7 @@ function App() {
       </main>
 
       {/* {showPopup && <Popup showPopup={showPopup} setShowPopup={setShowPopup} />} */}
-
+      <UpButton />
       <Footer />
     </div>
   );
