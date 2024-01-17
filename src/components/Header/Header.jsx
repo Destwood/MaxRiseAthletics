@@ -7,8 +7,7 @@ import instagram from "../../assets/instagram.svg";
 import phone from "../../assets/phone.svg";
 import mail from "../../assets/mail.svg";
 import star from "../../assets/star.svg";
-import logo2 from "../../assets/logoTemp.png";
-
+import logo2 from "../../assets/logo.jpg";
 function Header() {
   const [isMenuActive, SetIsMenuActive] = useState(false);
   const [isBurgerChacked, SetisBurgerChacked] = useState(false);

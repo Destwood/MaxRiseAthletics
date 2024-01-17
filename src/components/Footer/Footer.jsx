@@ -7,7 +7,7 @@ import inst from "../../assets/instagram.svg";
 import telegram from "../../assets/telegram.svg";
 import mail from "../../assets/mail.svg";
 import footerImg from "../../assets/footerImg.webp";
-import logo from "../../assets/logoTemp.png";
+import logo from "../../assets/logo.jpg";
 let number = "";
 function Footer() {
   const [phone, setPhone] = useState("");
@@ -57,7 +57,7 @@ function Footer() {
   }
 
   return (
-    <footer className={style.wrapper} style={{ backgroundImage: `url(${bg})` }}>
+    <footer className={style.wrapper}  id="order" style={{ backgroundImage: `url(${bg})` }}>
       <div className={style.container}>
         <h2>
           <span>Зв'язок</span> з нами
@@ -173,7 +173,7 @@ function Footer() {
         </div>
       </div>
       <div className={style.footer}>
-        <img className={style.footerImg} src={footerImg} alt="" />
+        {/* <img className={style.footerImg} src={footerImg} alt="" /> */}
         <div className={style.footerContent}>
           <img className={style.mainLogo} src={logo} alt="" />
           <div className={style.footerLinks}>

@@ -17,12 +17,15 @@ function Services() {
             <p className={style.slogan}>Створіть тіло своєї мрії</p>
             <h3>Прогрессуй</h3>
           </div>
-          <div className={style.middle}>100$</div>
+          <div className={style.middle}>
+            <span className={style.month}>₴ </span>3990
+            <p className={style.monthly}>/місяць</p>
+          </div>
           <div className={style.bottom}>
-            <p>
+            <p className={style.bottomDesc}>
               Стань <span>учасником</span>
             </p>
-            <button>Замовити зараз</button>
+            <button className={style.order}>Замовити зараз</button>
           </div>
         </div>
         <div className={style.details}>

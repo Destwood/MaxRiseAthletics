@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./About.module.scss";
 
-import sideText1 from "../../assets/sideText1.png";
+import sideText1 from "../../assets/Calculator.png";
 import sideText2 from "../../assets/test.jpg";
 import sideText3 from "../../assets/sideText3.PNG";
 import clock from "../../assets/clock.svg";

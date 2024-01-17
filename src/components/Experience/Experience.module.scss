@@ -1,4 +1,4 @@
-.wrapper {
+Э.wrapper {
   padding: 10rem 0;
 }
 
@@ -26,12 +26,10 @@
   }
   .video {
     width: 100%;
-    height: 40rem;
-    background-color: #262626;
-    border-radius: 2rem;
+    height: 47rem;
     margin: 5rem 0;
     overflow: hidden;
-    padding: 2rem;
+    border-radius: 2rem;
     img {
       position: relative;
       width: 100%;
@@ -116,9 +114,8 @@
   }
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1024px) {
   .achivements {
-    padding: 0;
     .item {
     }
   }

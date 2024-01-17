@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import style from "./Calculator.module.scss";
-import experienceImg from "../../assets/GymBg.png";
+import experienceImg from "../../assets/PullImg.png";
 function Calculator() {
   const ratio = { Атлет: 1.5, Активний: 1.55, Змішаний: 1.375, Сидячий: 1.2 };
   const [gender, setGender] = useState("Жінка");
