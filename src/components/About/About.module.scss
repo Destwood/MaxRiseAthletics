@@ -1,7 +1,7 @@
 /* containers */
 
 .wrapper {
-  padding: 0 5rem 4rem;
+  padding: 0 2.5rem 4rem;
   background-color: #fff;
 }
 
@@ -84,7 +84,7 @@
 
 .desc {
   color: #000;
-  font-size: 1.1rem;
+  font-size: 1rem;
   max-width: 80%;
 }
 
@@ -104,6 +104,9 @@
   .desc {
     font-size: 0.8rem;
   }
+  .icon {
+    height: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -111,13 +114,36 @@
     display: flex;
     flex-wrap: wrap;
     & > div {
-      min-width: 70vw;
-      flex: 1;
+      width: 90%;
+      margin: 0 auto 5rem;
     }
+    h3 {
+      font-size: 3rem;
+    }
+  }
+  .desc {
+    font-size: 1rem;
+  }
+  .icon {
+    height: 5rem;
+  }
+  .imgContainer {
+    width: 50%;
   }
 }
 @media (max-width: 320px) {
   .servicesContainer {
     padding: 2rem;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+      min-width: 60vw;
+      flex: 1;
+    }
+    h3 {
+      font-size: 4rem;
+    }
   }
 }

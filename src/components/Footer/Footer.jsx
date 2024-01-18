@@ -57,7 +57,11 @@ function Footer() {
   }
 
   return (
-    <footer className={style.wrapper}  id="order" style={{ backgroundImage: `url(${bg})` }}>
+    <footer
+      className={style.wrapper}
+      id="order"
+      style={{ backgroundImage: `url(${bg})` }}
+    >
       <div className={style.container}>
         <h2>
           <span>Зв'язок</span> з нами

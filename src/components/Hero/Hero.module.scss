@@ -50,7 +50,8 @@
 }
 
 .content {
-  position: relative;display: flex;
+  position: relative;
+  display: flex;
   justify-content: space-around;
   flex-direction: column;
   width: 65vw;
@@ -105,7 +106,7 @@
   .imgContainer {
     height: 23rem;
     min-width: 23rem;
-    top:5vh;
+    top: 5vh;
   }
   .img {
     right: 3rem;
@@ -122,7 +123,8 @@
     }
     .list {
       margin: 1rem;
-    }.order {
+    }
+    .order {
       max-width: 13rem;
     }
   }
@@ -139,16 +141,38 @@
   .imgContainer {
     min-width: 10rem;
     left: 0;
-    top:2rem;
+    top: 2rem;
     margin-right: -2rem;
   }
-
-
+  .img {
+    right: 4rem;
+  }
   .content {
     margin: auto;
     padding: 2rem 3rem;
   }
   .order {
     margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0;
+  }
+  .hero {
+    display: block;
+  }
+  .imgContainer {
+    height: 70vw;
+    margin: auto;
+  }
+  .content {
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1rem;
+  }
+  .img {
+    right: 5rem;
   }
 }

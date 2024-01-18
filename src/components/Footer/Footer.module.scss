@@ -189,3 +189,20 @@
 .footerLogo {
   height: 2rem;
 }
+@media (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    padding-bottom: 5rem;
+  }
+  .contacts {
+    height: fit-content;
+  }
+  .footerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    & > a {
+      display: block;
+    }
+  }
+}
