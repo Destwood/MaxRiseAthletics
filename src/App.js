@@ -13,13 +13,11 @@ import UpButton from "./components/UpButton/UpButton";
 
 function App() {
   // const [showPopup, setShowPopup] = useState(false);
-
   // useEffect(() => {
   //   setTimeout(() => {
   //     setShowPopup(true);
   //   }, 2000);
   // }, []);
-
   // useEffect(() => {
   //   if (showPopup) {
   //     document.documentElement.classList.add("htmlOverflowHidden");
