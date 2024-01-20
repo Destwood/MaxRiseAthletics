@@ -18,6 +18,7 @@ function App() {
   //     setShowPopup(true);
   //   }, 2000);
   // }, []);
+
   // useEffect(() => {
   //   if (showPopup) {
   //     document.documentElement.classList.add("htmlOverflowHidden");
