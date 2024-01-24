@@ -214,7 +214,9 @@ function Footer() {
               <img src={mail} className={style.footerLogo} alt="" />
             </a>
           </div>
-          <p>© 2023 MaxRise-Athletics. All rights reserved.</p>
+          <p className={style.rights}>
+            © 2023 MaxRise-Athletics. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

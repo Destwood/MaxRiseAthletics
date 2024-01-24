@@ -6,7 +6,7 @@ import trophy from "../../assets/trophy.svg";
 
 function Experience() {
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} id="experience">
       <div className={style.container}>
         <div className={style.experience}>
           <div className={style.contantContainer}>

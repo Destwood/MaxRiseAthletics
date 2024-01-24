@@ -6,7 +6,7 @@ import checked from "../../assets/checked.svg";
 
 function Hero() {
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} id="hero">
       <div className={style.hero}>
         <div className={style.imgContainer}>
           <img className={style.img} src={img} alt="" />

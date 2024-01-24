@@ -21,7 +21,6 @@ function Calculator() {
         setBmi(Math.round((bmi + 5) * ratio[activity]));
       }
     } else {
-      console.log("Please fill all fields");
       setBmi(0);
     }
   };

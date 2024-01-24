@@ -200,9 +200,25 @@
   .footerLinks {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 1rem;
     & > a {
+      min-width: 25%;
       display: block;
+      margin-bottom: 0.2rem;
     }
+  }
+  .submit {
+    margin: auto;
+  }
+  .footer {
+    height: fit-content;
+  }
+  .footerContent {
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  .rights {
+    font-size: 0.8rem;
   }
 }

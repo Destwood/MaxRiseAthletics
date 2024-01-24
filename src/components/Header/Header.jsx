@@ -48,27 +48,27 @@ function Header() {
         {/* menu */}
         <ul className={style.links}>
           <li className={`${style.linksItem}`}>
-            <a href="#about" className={style.main}>
+            <a href="#hero" className={style.main}>
               Головна
             </a>
           </li>
           <li className={`${style.linksItem}`}>
-            <a href="#results" className={style.link}>
+            <a href="#about" className={style.link}>
               Про нас
             </a>
           </li>
           <li className={`${style.linksItem}`}>
-            <a href="#services" className={style.link}>
+            <a href="#experience" className={style.link}>
               Досвід
             </a>
           </li>
           <li className={style.linksItem}>
-            <a href="#order" className={style.link}>
+            <a href="#services" className={style.link}>
               Послуги
             </a>
           </li>
           <li className={style.linksItem}>
-            <a href="#order" className={style.link}>
+            <a href="#calculator" className={style.link}>
               Калькулятор
             </a>
           </li>
@@ -92,18 +92,10 @@ function Header() {
             >
               <img src={telegram} alt="telegram" className={style.linkLogo} />
             </a>
-            <a
-              href="https://instagram.com/maxrise_athletics?igshid=MzRlODBiNWFlZA=="
-              className={style.link}
-              target="blank"
-            >
+            <a href="tel:098 908 54 50" className={style.link}>
               <img src={phone} alt="inst" className={style.linkLogo} />
             </a>
-            <a
-              href="https://t.me/MaxRise_Athletics"
-              className={style.link}
-              target="blank"
-            >
+            <a href="mailto:maxrise.athletics@gmail.com" className={style.link}>
               <img src={mail} alt="telegram" className={style.linkLogo} />
             </a>
           </li>
@@ -185,6 +177,19 @@ function Header() {
                 target="blank"
               >
                 <img src={instagram} alt="inst" className={style.linkLogo} />
+              </a>
+            </div>
+            <div className={style.mail + " " + style.socialLink}>
+              <a href="tel:098 908 54 50" className={style.link}>
+                <img src={phone} alt="inst" className={style.linkLogo} />
+              </a>
+            </div>
+            <div className={style.mail + " " + style.socialLink}>
+              <a
+                href="mailto:maxrise.athletics@gmail.com"
+                className={style.link}
+              >
+                <img src={mail} alt="telegram" className={style.linkLogo} />
               </a>
             </div>
           </div>

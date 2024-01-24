@@ -3,6 +3,7 @@
   background-color: #fff;
   display: flex;
   align-items: center;
+  flex-direction: column;
   margin: auto;
 }
 
@@ -11,6 +12,25 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
+}
+.sectionTitle {
+  position: relative;
+  width: 70%;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  margin: 0 auto 3rem;
+  border-bottom: 1px solid #fff;
+  &::after {
+    margin-top: 1rem;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+  }
 }
 .main {
   height: 25rem;

@@ -11,11 +11,12 @@ import weight from "../../assets/dumbell.svg";
 function Services() {
   return (
     <div className={style.wrapper}>
+      <h2 className={style.sectionTitle}>Про нас</h2>
       <div className={style.container}>
         <div className={style.main}>
           <div className={style.top}>
             <p className={style.slogan}>Створіть тіло своєї мрії</p>
-            <h3>Прогрессуй</h3>
+            <h3>Прогресуй</h3>
           </div>
           <div className={style.middle}>
             <span className={style.month}>₴ </span>3990

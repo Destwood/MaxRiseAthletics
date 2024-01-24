@@ -24,7 +24,7 @@
 .img {
   position: relative;
   height: 100%;
-  right: 5rem;
+  right: 20%;
   z-index: 1;
 }
 .imgContainer::after {
@@ -108,9 +108,7 @@
     min-width: 23rem;
     top: 5vh;
   }
-  .img {
-    right: 3rem;
-  }
+
   .content {
     width: 65%;
     padding: 2rem 2rem 2rem 7rem;
@@ -144,9 +142,7 @@
     top: 2rem;
     margin-right: -2rem;
   }
-  .img {
-    right: 4rem;
-  }
+
   .content {
     margin: auto;
     padding: 2rem 3rem;
@@ -171,8 +167,5 @@
     width: 100%;
     margin-top: 3rem;
     padding: 1rem;
-  }
-  .img {
-    right: 5rem;
   }
 }
