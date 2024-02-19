@@ -18,10 +18,12 @@ function Services() {
             <p className={style.slogan}>Створіть тіло своєї мрії</p>
             <h3>Прогресуй</h3>
           </div>
+          {/* Order button */}
           <div className={style.middle}>
             <span className={style.month}>₴ </span>3990
             <p className={style.monthly}>/місяць</p>
           </div>
+          {/*  */}
           <div className={style.bottom}>
             <p className={style.bottomDesc}>
               Стань <span>учасником</span>
