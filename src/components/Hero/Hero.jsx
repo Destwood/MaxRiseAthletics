@@ -35,7 +35,9 @@ function Hero() {
               Онлайн підтримка 7 днів на тиждень
             </li>
           </ul>
-          <button className={style.order}>Замовити</button>
+          <a href="#order" className={style.order}>
+            Замовити
+          </a>
         </div>
       </div>
     </div>

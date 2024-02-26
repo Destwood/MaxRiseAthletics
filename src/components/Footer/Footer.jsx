@@ -181,36 +181,44 @@ function Footer() {
         <div className={style.footerContent}>
           <img className={style.mainLogo} src={logo} alt="" />
           <div className={style.footerLinks}>
-            <a href="#about" className={style.main}>
+            <a href="#hero" className={style.main}>
               Головна
             </a>
-            <a href="#results" className={style.link}>
+            <a href="#about" className={style.link}>
               Про нас
             </a>
-            <a href="#services" className={style.link}>
+            <a href="#experience" className={style.link}>
               Досвід
             </a>
-            <a href="#order" className={style.link}>
-              Послуги
-            </a>
-            <a href="#order" className={style.link}>
+            <a href="#calculator" className={style.link}>
               Калькулятор
+            </a>
+            <a href="#services" className={style.link}>
+              Послуги
             </a>
             <a href="#order" className={style.link}>
               Замовити
             </a>
           </div>
           <div className={style.footerSocial}>
-            <a href="#services" className={style.link}>
+            <a
+              href="https://instagram.com/maxrise_athletics?igshid=MzRlODBiNWFlZA=="
+              target="blank"
+              className={style.link}
+            >
               <img src={inst} className={style.footerLogo} alt="" />
             </a>
-            <a href="#order" className={style.link}>
+            <a
+              href="https://t.me/MaxRise_Athletics"
+              target="blank"
+              className={style.link}
+            >
               <img src={telegram} className={style.footerLogo} alt="" />
             </a>
-            <a href="#order" className={style.link}>
+            <a href="tel:098 908 54 50" className={style.link}>
               <img src={phoneImg} className={style.footerLogo} alt="" />
             </a>
-            <a href="#order" className={style.link}>
+            <a href="mailto:maxrise.athletics@gmail.com" className={style.link}>
               <img src={mail} className={style.footerLogo} alt="" />
             </a>
           </div>

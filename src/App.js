@@ -12,6 +12,7 @@ import Header from "./components/Header/Header";
 import UpButton from "./components/UpButton/UpButton";
 
 function App() {
+  const [page, setPage] = useState("");
   // const [showPopup, setShowPopup] = useState(false);
   // useEffect(() => {
   //   setTimeout(() => {

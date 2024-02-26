@@ -63,13 +63,13 @@ function Header() {
             </a>
           </li>
           <li className={style.linksItem}>
-            <a href="#services" className={style.link}>
-              Послуги
+            <a href="#calculator" className={style.link}>
+              Калькулятор
             </a>
           </li>
           <li className={style.linksItem}>
-            <a href="#calculator" className={style.link}>
-              Калькулятор
+            <a href="#services" className={style.link}>
+              Послуги
             </a>
           </li>
           <li className={`${style.linksItem} ${style.space}`}>

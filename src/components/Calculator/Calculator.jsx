@@ -25,7 +25,7 @@ function Calculator() {
     }
   };
   return (
-    <div className={style.wrapper}>
+    <div className={style.wrapper} id="calculator">
       <div className={style.container}>
         <div className={style.img}>
           <img className={style.img} src={experienceImg} alt="" />

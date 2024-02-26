@@ -10,8 +10,8 @@ import weight from "../../assets/dumbell.svg";
 
 function Services() {
   return (
-    <div className={style.wrapper}>
-      <h2 className={style.sectionTitle}>Про нас</h2>
+    <div className={style.wrapper} id="services">
+      <h2 className={style.sectionTitle}>Послуги</h2>
       <div className={style.container}>
         <div className={style.main}>
           <div className={style.top}>
