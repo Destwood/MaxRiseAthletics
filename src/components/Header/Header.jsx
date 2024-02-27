@@ -8,6 +8,7 @@ import phone from "../../assets/phone.svg";
 import mail from "../../assets/mail.svg";
 import star from "../../assets/star.svg";
 import logo2 from "../../assets/logo.jpg";
+import { Link } from "react-router-dom";
 function Header() {
   const [isMenuActive, SetIsMenuActive] = useState(false);
   const [isBurgerChacked, SetisBurgerChacked] = useState(false);
@@ -39,10 +40,11 @@ function Header() {
     <header>
       <div className={style.headerContainer}>
         {/* logo */}
-        <a href="/" className={style.logo}>
+        <Link to={"/MaxRiseAthletics"} className={style.logo}>
           <img className={style.logoImg} src={logo} alt=""></img>
           <img className={style.logo2} src={logo2} alt=""></img>
-        </a>
+        </Link>
+
         {/* logo */}
 
         {/* menu */}

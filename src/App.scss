@@ -46,7 +46,10 @@ main {
 
 .App {
   height: 100vh;
-  background-color: red;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* popup */

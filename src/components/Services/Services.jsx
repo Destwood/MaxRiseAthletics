@@ -28,37 +28,6 @@ function Services() {
             <p className={style.bottomDesc}>
               Стань <span>учасником</span>
             </p>
-
-            <form
-              method="POST"
-              accept-charset="utf-8"
-              target="_blank"
-              action="https://www.liqpay.ua/api/3/checkout"
-            >
-              <input
-                type="hidden"
-                name="data"
-                value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiI1IiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCc0ZbQuSDRgtC+0LLQsNGAIiwicHVibGljX2tleSI6InNhbmRib3hfaTczNjE1MzQxMTU4IiwibGFuZ3VhZ2UiOiJ1ayJ9"
-              />
-              <input
-                type="hidden"
-                name="signature"
-                value="VR8QEf/W1cQqyB49kibrouvHNls="
-              />
-              <button className={style.order}>
-                <img
-                  src="https://static.liqpay.ua/buttons/logo-white.svg"
-                  name="btn_text"
-                  style={{
-                    verticalAlign: "middle",
-                  }}
-                  alt=""
-                />
-                <span style={{ verticalAlign: "middle", marginLeft: "8px" }}>
-                  Сплатити
-                </span>
-              </button>
-            </form>
           </div>
         </div>
         <div className={style.details}>

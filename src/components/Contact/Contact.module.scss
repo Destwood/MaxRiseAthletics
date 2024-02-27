@@ -1,6 +1,7 @@
 .container {
   position: relative;
-  width: 70%;
+  width: 100%;
+  padding: 0 15%;
   margin: auto;
   h2 {
     font-weight: 400;
@@ -37,6 +38,20 @@
     font-size: 0.9rem;
     display: block;
     width: fit-content;
+  }
+}
+.order {
+  margin-top: 1rem;
+  width: 10rem;
+  background-color: #ff7f27;
+  border: none;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  &:hover {
+    background-color: #d87431;
   }
 }
 .logo {

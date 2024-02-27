@@ -1,0 +1,21 @@
+.info {
+  padding: 2rem 10rem 7rem;
+  width: 75vw;
+  margin: auto;
+  border-bottom: 1px solid #000;
+}
+
+.infoPage {
+  font-weight: 700;
+  h1 {
+    font-weight: 900;
+  }
+  h2 {
+    font-weight: 900;
+    margin: 1rem 0;
+  }
+  ul {
+    list-style: disc;
+    padding-left: 2rem;
+  }
+}
