@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import style from "./Footer.module.scss";
 
-import bg from "../../assets/GymBg.png";
 import phoneImg from "../../assets/phone.svg";
 import inst from "../../assets/instagram.svg";
 import telegram from "../../assets/telegram.svg";
@@ -57,125 +57,7 @@ function Footer() {
   }
 
   return (
-    <footer
-      className={style.wrapper}
-      id="order"
-      style={{ backgroundImage: `url(${bg})` }}
-    >
-      <div className={style.container}>
-        <h2>
-          <span>Зв'язок</span> з нами
-        </h2>
-        <div className={style.contactContainer}>
-          <div className={style.contacts}>
-            <div className={style.contactsItem}>
-              {/* <p className={style.linkName}>098 &#40;908&#41; 54 50</p> */}
-              <img
-                src={phoneImg}
-                alt="inst"
-                className={`${style.logo} ${style.phone}`}
-              />
-              <div className={style.ContactInfo}>
-                <h5>Телефон:</h5>
-                <a href="tel:098 908 54 50" className={style.link}>
-                  +38 098 908 54 50
-                </a>
-              </div>
-            </div>
-            <div className={style.contactsItem}>
-              <img
-                src={mail}
-                alt="inst"
-                className={`${style.logo} ${style.mail}`}
-              />
-              <div className={style.ContactInfo}>
-                <h5>Пошта:</h5>
-                <a
-                  href="mailto:maxrise.athletics@gmail.com"
-                  className={style.link}
-                >
-                  MaxRise.Athletics@gmail.com
-                </a>
-              </div>
-            </div>
-            <div className={style.contactsItem}>
-              <img
-                src={inst}
-                alt="inst"
-                className={`${style.logo} ${style.instagram}`}
-              />
-              <div className={style.ContactInfo}>
-                <h5>Instagram:</h5>
-                <a
-                  href="https://instagram.com/maxrise_athletics?igshid=MzRlODBiNWFlZA=="
-                  className={style.link}
-                  target="blank"
-                >
-                  maxrise_athletics
-                </a>
-              </div>
-
-              <div className=""></div>
-            </div>
-            <div className={style.contactsItem}>
-              <img
-                src={telegram}
-                alt="telegram"
-                className={`${style.logo} ${style.telegram}`}
-              />
-              <div className={style.ContactInfo}>
-                <h5>Telegram:</h5>
-                <a
-                  href="https://t.me/MaxRise_Athletics"
-                  className={style.link}
-                  target="blank"
-                >
-                  @MaxRise_Athletics
-                </a>
-              </div>
-            </div>
-          </div>
-          <form
-            action="https://formspree.io/f/xknlgqvl"
-            method="POST"
-            className={style.form}
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Ім'я"
-              className={`${style.name} + ${style.input}`}
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Електронна пошта"
-              className={`${style.mail} + ${style.input}`}
-              required
-            />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="+38 (___) ___-__-__"
-              className={`${style.phone} + ${style.input}`}
-              required
-              value={phone}
-              onChange={handlePhoneChange}
-              onKeyDown={handleKeyDown}
-            />
-            <textarea
-              type="text"
-              name="message"
-              placeholder="Ваше повідомлення (необов‘язково)"
-              className={`${style.msg} + ${style.input}`}
-            ></textarea>
-            <button type="submit" className={style.submit}>
-              Підтвердити
-            </button>
-          </form>
-        </div>
-      </div>
+    <footer className={style.wrapper} id="order">
       <div className={style.footer}>
         {/* <img className={style.footerImg} src={footerImg} alt="" /> */}
         <div className={style.footerContent}>
@@ -223,7 +105,9 @@ function Footer() {
             </a>
           </div>
           <p className={style.rights}>
-            © 2023 MaxRise-Athletics. All rights reserved.
+            <Link to={"/info"}>
+              © 2023 MaxRise-Athletics. All rights reserved.
+            </Link>
           </p>
         </div>
       </div>

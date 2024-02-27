@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
@@ -10,9 +10,8 @@ import "./App.scss";
 
 import Header from "./components/Header/Header";
 import UpButton from "./components/UpButton/UpButton";
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
-  const [page, setPage] = useState("");
   // const [showPopup, setShowPopup] = useState(false);
   // useEffect(() => {
   //   setTimeout(() => {
@@ -27,23 +26,36 @@ function App() {
   //     document.documentElement.classList.remove("htmlOverflowHidden");
   //   }
   // }, [showPopup]);
-
-  return (
-    <div className="App">
-      <Header />
-
-      <main>
+  function Home() {
+    return (
+      <div>
         <Hero />
         <About />
         <Experience />
         <Calculator />
         <Services />
-      </main>
+      </div>
+    );
+  }
+  function Info() {
+    return <div>ффффффффффф</div>;
+  }
 
-      {/* {showPopup && <Popup showPopup={showPopup} setShowPopup={setShowPopup} />} */}
-      <UpButton />
-      <Footer />
-    </div>
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/info" element={<Info />} />
+        </Routes>
+
+        {/* {showPopup && <Popup showPopup={showPopup} setShowPopup={setShowPopup} />} */}
+        <UpButton />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
