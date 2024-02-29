@@ -55,7 +55,11 @@ function Contact() {
   }
 
   return (
-    <div className={style.container} style={{ backgroundImage: `url(${bg})` }}>
+    <div
+      className={style.container}
+      style={{ backgroundImage: `url(${bg})` }}
+      id="order"
+    >
       <h2>
         <span>Зв'язок</span> з нами
       </h2>

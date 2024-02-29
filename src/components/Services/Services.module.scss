@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   margin: auto;
+  padding-top: 4rem;
 }
 
 .container {
@@ -119,10 +120,19 @@
   margin-right: 3rem;
 }
 
+.order {
+  display: block;
+  background-color: #ff7f27;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem auto 0;
+  font-size: 1.1rem;
+}
+
 @media (max-width: 1440px) {
   .wrapper {
     height: fit-content;
-    padding: 5rem 0;
   }
   .container {
     flex-direction: column-reverse;

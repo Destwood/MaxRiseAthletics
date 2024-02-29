@@ -2,6 +2,9 @@ import React from "react";
 import style from "./Info.module.scss";
 
 function Info() {
+  window.scrollTo({
+    top: 0,
+  });
   return (
     <div className={style.info}>
       {/* privaticy */}

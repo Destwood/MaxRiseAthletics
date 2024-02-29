@@ -27,6 +27,9 @@ function Services() {
           <div className={style.bottom}>
             <p className={style.bottomDesc}>
               Стань <span>учасником</span>
+              <a href="#order" className={style.order}>
+                Замовити
+              </a>
             </p>
           </div>
         </div>
