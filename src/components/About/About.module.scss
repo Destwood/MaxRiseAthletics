@@ -21,15 +21,15 @@
   padding-bottom: 2rem;
   margin: 0 auto 3rem;
   border-bottom: 1px solid #fff;
-  &::after {
-    margin-top: 1rem;
-    content: "";
-    display: block;
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    background-color: #000;
-  }
+  // &::after {
+  //   margin-top: 1rem;
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   height: 1px;
+  //   width: 100%;
+  //   background-color: #000;
+  // }
 }
 .container {
   position: relative;
@@ -96,6 +96,14 @@
 }
 .reverseHide {
   display: block;
+}
+@media (min-width: 1900px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+  .desc {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 1024px) {
   .wrapper {
