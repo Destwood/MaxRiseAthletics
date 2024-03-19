@@ -1,0 +1,196 @@
+.wrapper {
+  padding: 10rem 0;
+}
+
+.container {
+  width: 80%;
+  background-color: #282828;
+  margin: auto;
+}
+.contantContainer {
+  width: 70%;
+  margin: auto;
+}
+.experience {
+  color: #fff;
+  text-align: center;
+  padding: 10rem 0;
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+  }
+  .text {
+    font-size: 1.5rem;
+  }
+
+  .desc {
+    font-size: 2rem;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+.video {
+  width: 100%;
+  max-height: 47rem;
+  margin: 5rem 0;
+  overflow: hidden;
+  border-radius: 2rem;
+  img {
+    position: relative;
+    width: 100%;
+    bottom: 15rem;
+  }
+}
+.achivements {
+  background-color: #121212;
+  padding: 10rem 0;
+  color: #444;
+  .contantContainer {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+  }
+  .item {
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid grey;
+    .number {
+      font-size: 5rem;
+      font-weight: 800;
+    }
+  }
+  .item:nth-child(1) {
+    border-top: none;
+    border-left: none;
+  }
+  .item:nth-child(2) {
+    border-top: none;
+    border-right: none;
+  }
+  .item:nth-child(3) {
+    border-bottom: none;
+    border-left: none;
+  }
+  .item:nth-child(4) {
+    border-right: none;
+    border-bottom: none;
+  }
+  .trophyContainer {
+    position: absolute;
+    top: 43%;
+    left: 45%;
+    height: 4rem;
+    width: 4rem;
+    width: fit-content;
+    height: fit-content;
+    background-color: #121212;
+    padding: 1rem 0;
+  }
+  .trophy {
+    height: 4rem;
+  }
+}
+
+.button {
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #fb7d26;
+  padding: 0.2rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  &:hover {
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 1024px) {
+  .experience {
+    padding: 5rem 0;
+    .text {
+      font-size: 1.2rem;
+    }
+    .desc {
+      width: fit-content;
+    }
+  }
+  .achivements {
+    padding: 8rem 0;
+    margin-bottom: 5rem;
+    .item {
+      width: 13rem;
+      height: 13rem;
+      .number {
+        font-size: 4rem;
+      }
+    }
+    .trophyContainer {
+      top: 38%;
+      left: 43%;
+      height: 4rem;
+      width: 4rem;
+      width: fit-content;
+      height: fit-content;
+      background-color: #121212;
+      padding: 1rem 0;
+    }
+  }
+  .video {
+    max-height: 20rem;
+    img {
+      bottom: 10rem;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    padding-bottom: 2rem;
+  }
+  .container {
+    width: 100%;
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+  // .achivements {
+  //   margin-bottom: 0;
+  // }
+}
+
+@media (max-width: 420px) {
+  .achivements {
+    .item {
+      width: 10rem;
+      height: 10rem;
+      text-align: center;
+      .number {
+        font-size: 2rem;
+      }
+    }
+    .trophyContainer {
+      top: 35%;
+      left: 40%;
+    }
+  }
+  .video {
+    margin: 2rem 0;
+    border-radius: 0;
+  }
+  .experience {
+    .contantContainer {
+      width: 100%;
+    }
+    .text {
+      font-size: 1.2rem;
+    }
+  }
+}
