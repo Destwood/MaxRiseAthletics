@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import style from "./Calculator.module.scss";
+import gymBg from "../../assets/GymBg.png";
 import experienceImg from "../../assets/PullImg.png";
 function Calculator() {
   const ratio = { Атлет: 1.5, Активний: 1.55, Змішаний: 1.375, Сидячий: 1.2 };
@@ -28,7 +29,7 @@ function Calculator() {
     <div className={style.wrapper} id="calculator">
       <div className={style.container}>
         <div className={style.img}>
-          <img className={style.img} src={experienceImg} alt="" />
+          <img className={style.img} src={gymBg} alt="" />
         </div>
         <div className={style.сalculator}>
           <h2>Розрахувати ІМТ</h2>
@@ -108,12 +109,12 @@ function Calculator() {
                   факторів на споживання енергії.
                 </p>
                 <p>
-                  юдське харчування та обмін речовин залежать від різноманітних
+                  Людське харчування та обмін речовин залежать від різноманітних
                   аспектів, включаючи не лише якість та спосіб приготування їжі,
                   але й індивідуальні особливості кожного організму.
                 </p>
                 <p>
-                  Л Важливим аспектом раціонального харчування залишається
+                  Важливим аспектом раціонального харчування залишається
                   збалансованість між енергією, яку отримуємо з їжею, та
                   витратами цієї енергії.
                 </p>

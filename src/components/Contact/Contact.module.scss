@@ -1,13 +1,20 @@
+.wrapper {
+  padding: 3rem 0 0;
+  position: relative;
+}
+.bg {
+}
 .container {
   position: relative;
   width: 100%;
-  padding: 0 15%;
-  margin: auto;
+  padding: 2rem 15% 0;
+  margin: 4rem auto 0;
+  color: #fff;
   h2 {
     font-weight: 400;
     font-size: 2.5rem;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     span {
       font-weight: 800;
     }
@@ -18,7 +25,7 @@
   gap: 3rem;
 }
 .contacts {
-  height: 70vh;
+  height: 65vh;
   .contactsItem {
     height: 3rem;
     display: flex;
@@ -31,7 +38,7 @@
   flex-direction: column;
   justify-content: space-around;
   h5 {
-    color: #424242;
+    // color: #424242;
   }
   .link {
     color: #ffffffa2;
