@@ -8,47 +8,21 @@ import phone from "../../assets/phone.svg";
 import mail from "../../assets/mail.svg";
 import star from "../../assets/star.svg";
 import logo2 from "../../assets/logo.jpg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 function Header() {
-  const [isMenuActive, SetIsMenuActive] = useState(false);
-  const [isBurgerChacked, SetisBurgerChacked] = useState(false);
+  const location = useLocation();
+  const currentPath = location.pathname;
+  const [isMenuActive, setIsMenuActive] = useState(false);
+  const [isBurgerChacked, setIsBurgerChacked] = useState(false);
 
   const handleBurgerChange = (event) => {
-    SetisBurgerChacked(event.target.checked);
+    setIsBurgerChacked(event.target.checked);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 1024 && isBurgerChacked) {
-        SetIsMenuActive(true);
-      } else {
-        SetIsMenuActive(false);
-      }
-      // popup delay
-      // popup delay
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [isBurgerChacked]);
-
-  return (
-    <header>
-      <div className={style.headerContainer}>
-        {/* logo */}
-        <Link to={"/MaxRiseAthletics"} className={style.logo}>
-          <img className={style.logoImg} src={logo} alt=""></img>
-          <img className={style.logo2} src={logo2} alt=""></img>
-        </Link>
-
-        {/* logo */}
-
-        {/* menu */}
-        <ul className={style.links}>
+  const renderLink = () => {
+    if (currentPath === "/MaxRiseAthletics") {
+      return (
+        <>
           <li className={`${style.linksItem}`}>
             <a href="#hero" className={style.main}>
               Головна
@@ -79,6 +53,81 @@ function Header() {
               Замовити
             </a>
           </li>
+        </>
+      );
+    } else if (currentPath === "/info") {
+      return (
+        <>
+          <li className={`${style.linksItem}`}>
+            <Link to={"/MaxRiseAthletics"} className={style.link}>
+              Головна
+            </Link>
+          </li>
+          <li className={`${style.linksItem}`}>
+            <Link to={"/MaxRiseAthletics"} className={style.link}>
+              Про нас
+            </Link>
+          </li>
+          <li className={`${style.linksItem}`}>
+            <Link to={"/MaxRiseAthletics"} className={style.link}>
+              Досвід
+            </Link>
+          </li>
+          <li className={style.linksItem}>
+            <Link to={"/MaxRiseAthletics"} className={style.link}>
+              Калькулятор
+            </Link>
+          </li>
+          <li className={style.linksItem}>
+            <Link to={"/MaxRiseAthletics"} className={style.link}>
+              Послуги
+            </Link>
+          </li>
+          <li className={`${style.linksItem} ${style.space}`}>
+            <Link to={"/MaxRiseAthletics"} className={style.link}>
+              Замовити
+            </Link>
+          </li>
+        </>
+      );
+    } else {
+      return null;
+    }
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 1024 && isBurgerChacked) {
+        setIsMenuActive(true);
+      } else {
+        setIsMenuActive(false);
+      }
+      // popup delay
+      // popup delay
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [isBurgerChacked]);
+
+  return (
+    <header>
+      <div className={style.headerContainer}>
+        {/* logo */}
+        <Link to={"/MaxRiseAthletics"} className={style.logo}>
+          <img className={style.logoImg} src={logo} alt=""></img>
+          <img className={style.logo2} src={logo2} alt=""></img>
+        </Link>
+
+        {/* logo */}
+
+        {/* menu */}
+        <ul className={style.links}>
+          {renderLink()}
           <li className={`${style.linksItem} ${style.social}`}>
             <a
               href="https://instagram.com/maxrise_athletics?igshid=MzRlODBiNWFlZA=="
@@ -123,8 +172,8 @@ function Header() {
           href="#about"
           className={style.dropdownLink}
           onClick={() => {
-            SetisBurgerChacked(false);
-            SetIsMenuActive(false);
+            setIsBurgerChacked(false);
+            setIsMenuActive(false);
           }}
         >
           Про нас
@@ -133,8 +182,8 @@ function Header() {
           href="#results"
           className={style.dropdownLink}
           onClick={() => {
-            SetisBurgerChacked(false);
-            SetIsMenuActive(false);
+            setIsBurgerChacked(false);
+            setIsMenuActive(false);
           }}
         >
           Результати
@@ -143,8 +192,8 @@ function Header() {
           href="#services"
           className={style.dropdownLink}
           onClick={() => {
-            SetisBurgerChacked(false);
-            SetIsMenuActive(false);
+            setIsBurgerChacked(false);
+            setIsMenuActive(false);
           }}
         >
           Послуги
@@ -153,8 +202,8 @@ function Header() {
           href="#order"
           className={style.dropdownLink}
           onClick={() => {
-            SetisBurgerChacked(false);
-            SetIsMenuActive(false);
+            setIsBurgerChacked(false);
+            setIsMenuActive(false);
           }}
         >
           Замовити
@@ -199,8 +248,8 @@ function Header() {
             href="#order"
             className={style.button}
             onClick={() => {
-              SetisBurgerChacked(false);
-              SetIsMenuActive(false);
+              setIsBurgerChacked(false);
+              setIsMenuActive(false);
             }}
           >
             <img src={star} alt="" className={style.linkLogo} />

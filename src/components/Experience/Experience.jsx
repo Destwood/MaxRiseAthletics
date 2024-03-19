@@ -8,7 +8,7 @@ function Experience() {
   return (
     <div className={style.wrapper} id="experience">
       <div className={style.container}>
-        <div className={style.experience}>
+        {/* <div className={style.experience}>
           <div className={style.contantContainer}>
             <h3>Більш ніж 7 років досвіду</h3>
             <div className={style.text}>
@@ -26,7 +26,7 @@ function Experience() {
             </div>
             <button className={style.button}>Долучитись</button>
           </div>
-        </div>
+        </div> */}
         <div className={style.achivements}>
           <div className={style.contantContainer}>
             <div className={style.item}>
@@ -42,8 +42,8 @@ function Experience() {
               <p className={style.desc}>задоволених клієнтів</p>
             </div>
             <div className={style.item}>
-              <p className={style.number}>28</p>
-              <p className={style.desc}>Днів на місяць</p>
+              <p className={style.number}>365</p>
+              <p className={style.desc}>Днів на рік</p>
             </div>
             <div className={style.trophyContainer}>
               <img className={style.trophy} src={trophy} alt="" />
